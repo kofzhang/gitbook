@@ -124,11 +124,9 @@ Python的用途：
 
 **编程语言排名**
 
-![1552888887901](D:/OneDrive%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/OneDrive%20-%20hebmu.edu.cn/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/Python/Python%E8%AE%B2%E4%B9%89/%E7%AC%AC%E4%BA%8C%E7%AB%A0_Python%E5%85%A5%E9%97%A8.assets/1552888887901.png)
+![](chapter2.assets/1552888887901.png)
 
-![1552888902321](D:/OneDrive%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/OneDrive%20-%20hebmu.edu.cn/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/Python/Python%E8%AE%B2%E4%B9%89/%E7%AC%AC%E4%BA%8C%E7%AB%A0_Python%E5%85%A5%E9%97%A8.assets/1552888902321.png)
-
-
+![](chapter2.assets/1552888902321.png)
 
 ## Python开发环境搭建
 

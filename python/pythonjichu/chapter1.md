@@ -46,7 +46,7 @@
 
 ​	<kbd>Win</kbd>+<kbd>R</kbd> 出现运行窗口，输入cmd，然后回车
 
-![1552874152888](D:/OneDrive%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9/OneDrive%20-%20hebmu.edu.cn/%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0/Python/Python%E8%AE%B2%E4%B9%89/%E7%AC%AC%E4%B8%80%E7%AB%A0_%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.assets/1552874152888.png)
+![](chapter1.assets/1552874152888.png)
 
 ### 2.命令行的结构
 
