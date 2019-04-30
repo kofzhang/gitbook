@@ -13,6 +13,12 @@
   * [第六章 对象](python/pythonjichu/chapter6.md)
   * [第七章 异常文件](python/pythonjichu/chapter7.md)
 * [Flask教程](python/flask/readme.md)
+  * [为什么要用Web框架](python/flask/chapter1.md)
+  * [课程大纲](python/flask/chapter2.md)
+  * [Flask简介](python/flask/chapter3.md)
+  * [Flask安装环境](python/flask/chapter4.md)
+  * [Requirements文件](python/flask/chapter5.md)
+  * [从HelloWorld开始](python/flask/chapter6.md)
 * [爬虫基础教程](python/pachong/readme.md)
 * [深度学习教程](python/deeplearning/readme.md)
 
