@@ -1,0 +1,1148 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第三章 流程控制语句 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter4.html" />
+    
+    
+    <link rel="prev" href="chapter2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">空间介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Python系列教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    Python基础教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    第一章 计算机基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    第二章 Python入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    第三章 流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    第四章 序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    第五章 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    第六章 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    第七章 异常文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../flask/readme.html">
+            
+                <a href="../flask/readme.html">
+            
+                    
+                    Flask教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../flask/chapter1.html">
+            
+                <a href="../flask/chapter1.html">
+            
+                    
+                    为什么要用Web框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../flask/chapter2.html">
+            
+                <a href="../flask/chapter2.html">
+            
+                    
+                    课程大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../flask/chapter3.html">
+            
+                <a href="../flask/chapter3.html">
+            
+                    
+                    Flask简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../flask/chapter4.html">
+            
+                <a href="../flask/chapter4.html">
+            
+                    
+                    Flask安装环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../flask/chapter5.html">
+            
+                <a href="../flask/chapter5.html">
+            
+                    
+                    Requirements文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../flask/chapter6.html">
+            
+                <a href="../flask/chapter6.html">
+            
+                    
+                    从HelloWorld开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../pachong/readme.html">
+            
+                <a href="../pachong/readme.html">
+            
+                    
+                    爬虫基础教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../deeplearning/readme.html">
+            
+                <a href="../deeplearning/readme.html">
+            
+                    
+                    深度学习教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java教程‌</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../java/javajichu/readme.html">
+            
+                <a href="../../java/javajichu/readme.html">
+            
+                    
+                    Java基础教程‌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../java/spring/readme.html">
+            
+                <a href="../../java/spring/readme.html">
+            
+                    
+                    Spring教程‌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../java/springboot/readme.html">
+            
+                <a href="../../java/springboot/readme.html">
+            
+                    
+                    SpringBoot教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第三章 流程控制语句</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E09;&#x7AE0;-&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;">&#x7B2C;&#x4E09;&#x7AE0; &#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;</h1>
+<h2 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h2>
+<p>Python&#x4EE3;&#x7801;&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x662F;&#x6309;&#x7167;&#x81EA;&#x4E0A;&#x5411;&#x4E0B;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;</p>
+<p>&#x901A;&#x8FC7;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#xFF0C;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BA9;&#x6307;&#x5B9A;&#x7684;&#x7A0B;&#x5E8F;&#x53CD;&#x590D;&#x6267;&#x884C;&#x591A;&#x6B21;</p>
+<p>&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x5206;&#x6210;&#x4E24;&#x5927;&#x7C7B;&#xFF1A;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;&#xFF0C;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</p>
+<h2 id="&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;">&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6761;&#x4EF6;&#x5224;&#x65AD;&#x8BED;&#x53E5;&#xFF08;if&#x8BED;&#x53E5;&#xFF09;</span>
+<span class="hljs-comment"># &#x8BED;&#x6CD5;&#xFF1A;if &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A; </span>
+<span class="hljs-comment">#            &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment"># &#x6267;&#x884C;&#x7684;&#x6D41;&#x7A0B;&#xFF1A;if&#x8BED;&#x53E5;&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x4F1A;&#x5148;&#x5BF9;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#x5224;&#x65AD;</span>
+<span class="hljs-comment">#    &#x5982;&#x679C;&#x4E3A;True&#xFF0C;&#x5219;&#x6267;&#x884C;if&#x540E;&#x7684;&#x8BED;&#x53E5;</span>
+<span class="hljs-comment">#    &#x5982;&#x679C;&#x4E3A;False&#xFF0C;&#x5219;&#x4E0D;&#x6267;&#x884C;</span>
+<span class="hljs-comment">#    &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;if&#x8BED;&#x53E5;&#x53EA;&#x4F1A;&#x63A7;&#x5236;&#x7D27;&#x968F;&#x5176;&#x540E;&#x7684;&#x90A3;&#x6761;&#x8BED;&#x53E5;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;if&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x591A;&#x6761;&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5728;if&#x540E;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment"># &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    &#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x4FDD;&#x5B58;&#x7740;&#x4E00;&#x7EC4;&#x4EE3;&#x7801;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x4E48;&#x90FD;&#x6267;&#x884C;&#x8981;&#x4E48;&#x90FD;&#x4E0D;&#x6267;&#x884C;</span>
+<span class="hljs-comment">#    &#x4EE3;&#x7801;&#x5757;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x4E3A;&#x4EE3;&#x7801;&#x5206;&#x7EC4;&#x7684;&#x673A;&#x5236;</span>
+<span class="hljs-comment">#    &#x5982;&#x679C;&#x8981;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x8BED;&#x53E5;&#x5C31;&#x4E0D;&#x80FD;&#x7D27;&#x968F;&#x5728;&#x5192;&#x53F7;&#x540E;&#x9762;&#xFF0C;&#x800C;&#x662F;&#x8981;&#x5199;&#x5728;&#x4E0B;&#x4E00;&#x884C;</span>
+<span class="hljs-comment">#    &#x4EE3;&#x7801;&#x5757;&#x4E0E;&#x7F29;&#x8FDB;&#x5F00;&#x59CB;&#xFF0C;&#x76F4;&#x5230;&#x4EE3;&#x7801;&#x56DE;&#x590D;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x7F29;&#x8FDB;&#x7EA7;&#x522B;&#x65F6;&#x7ED3;&#x675F;</span>
+<span class="hljs-comment"># &#x7F29;&#x8FDB;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x4F7F;&#x7528;tab&#x952E;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#xFF08;&#x56DB;&#x4E2A;&#xFF09;</span>
+<span class="hljs-comment">#    Python&#x7684;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E2D;&#x63A8;&#x8350;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x6765;&#x7F29;&#x8FDB;</span>
+<span class="hljs-comment">#    Python&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x7F29;&#x8FDB;&#x65B9;&#x5F0F;&#x5FC5;&#x987B;&#x7EDF;&#x4E00;</span>
+
+
+
+<span class="hljs-comment">#if True : print(&apos;&#x4F60;&#x731C;&#x6211;&#x51FA;&#x6765;&#x4E48;&#xFF1F;&apos;)</span>
+
+num = <span class="hljs-number">10</span>
+<span class="hljs-comment"># if num &gt; 10 : print(&apos;num&#x6BD4;10&#x5927;&#xFF01;&apos;)</span>
+<span class="hljs-comment"># print(&apos;&#x8C01;&#x4E5F;&#x7BA1;&#x4E0D;&#x4E86;&#x6211;&apos;)    </span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">True</span> :
+    print(<span class="hljs-number">123</span>)
+    print(<span class="hljs-number">456</span>)
+
+
+num = <span class="hljs-number">10</span>
+
+<span class="hljs-comment">#&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x8FDE;&#x63A5;&#x591A;&#x4E2A;&#x6761;&#x4EF6;&#xFF0C;</span>
+<span class="hljs-comment">#    &#x5982;&#x679C;&#x5E0C;&#x671B;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x540C;&#x65F6;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x4F7F;&#x7528;and</span>
+<span class="hljs-comment">#    &#x5982;&#x679C;&#x5E0C;&#x671B;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x5373;&#x53EF;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x4F7F;&#x7528;or</span>
+<span class="hljs-keyword">if</span> num &gt; <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> num &lt; <span class="hljs-number">20</span> :
+    print(<span class="hljs-string">&apos;num&#x6BD4;10&#x5927;&#xFF0C;num&#x6BD4;20&#x5C0F;&apos;</span>)
+
+<span class="hljs-keyword">if</span> <span class="hljs-number">10</span> &lt; num &lt; <span class="hljs-number">20</span> :
+    print(<span class="hljs-string">&apos;num&#x6BD4;10&#x5927;&#xFF0C;num&#x6BD4;20&#x5C0F;&apos;</span>)
+</code></pre>
+<p>&#x7EC3;&#x4E60;&#xFF1A;&#x5728;&#x547D;&#x4EE4;&#x97E9;&#x521A;&#x8BA9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x7528;&#x6237;&#x540D;&#x5E08;admin&#xFF0C;&#x5219;&#x663E;&#x793A;&#x6B22;&#x8FCE;&#x7BA1;&#x7406;&#x5458;&#x5149;&#x4E34;&#xFF1B;&#x5982;&#x679C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x662F;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5219;&#x4EC0;&#x4E48;&#x4E5F;&#x4E0D;&#x505A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># input()&#x51FD;&#x6570;</span>
+<span class="hljs-comment"># &#x8BE5;&#x51FD;&#x6570;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;</span>
+<span class="hljs-comment"># input()&#x8C03;&#x7528;&#x540E;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x81EA;&#x52A8;&#x6682;&#x505C;&#xFF0C;&#x7B49;&#x5F85;&#x7528;&#x6237;&#x8F93;&#x5165;</span>
+<span class="hljs-comment">#    &#x7528;&#x6237;&#x8F93;&#x5165;&#x5B8C;&#x5185;&#x5BB9;&#x4EE5;&#x540E;&#xFF0C;&#x70B9;&#x51FB;&#x56DE;&#x8F66;&#x7A0B;&#x5E8F;&#x624D;&#x4F1A;&#x7EE7;&#x7EED;&#x5411;&#x4E0B;&#x6267;&#x884C;</span>
+<span class="hljs-comment">#    &#x7528;&#x6237;&#x8F93;&#x5165;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x5176;&#x6240;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x4EE5;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;</span>
+<span class="hljs-comment">#    &#x6CE8;&#x610F;&#xFF1A;input()&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</span>
+<span class="hljs-comment">#    input()&#x51FD;&#x6570;&#x4E2D;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x4F1A;&#x4F5C;&#x4E3A;&#x63D0;&#x793A;&#x6587;&#x5B57;&#x663E;&#x793A;</span>
+<span class="hljs-comment">#    input()&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6682;&#x65F6;&#x963B;&#x6B62;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;</span>
+
+a = input(<span class="hljs-string">&apos;&#x6E05;&#x8F93;&#x5165;&#x4EFB;&#x610F;&#x5185;&#x5BB9;&#xFF1A;&apos;</span>)
+print(<span class="hljs-string">&apos;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x662F;&#xFF1A;&apos;</span>,a)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x7528;&#x6237;&#x540D;</span>
+username = input(<span class="hljs-string">&apos;&#x6E05;&#x8F93;&#x5165;&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF1A;&apos;</span>)
+<span class="hljs-comment"># &#x5224;&#x65AD;&#x7528;&#x6237;&#x540D;&#x662F;&#x5426;&#x662F;admin</span>
+<span class="hljs-keyword">if</span> username == <span class="hljs-string">&apos;admin&apos;</span> :
+    print(<span class="hljs-string">&apos;&#x6B22;&#x8FCE;&#x7BA1;&#x7406;&#x5458;&#x5149;&#x4E34;&#xFF01;&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8BA9;&#x7528;&#x6237;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5E74;&#x9F84;</span>
+age = int(input(<span class="hljs-string">&apos;&#x6E05;&#x8F93;&#x5165;&#x4F60;&#x7684;&#x5E74;&#x9F84;&#xFF1A;&apos;</span>))
+
+
+<span class="hljs-comment"># &#x5982;&#x679C;&#x7528;&#x6237;&#x7684;&#x5E74;&#x9F84;&#x5927;&#x4E8E;18&#x5C81;&#xFF0C;&#x5219;&#x663E;&#x793A;&#x4F60;&#x5DF2;&#x7ECF;&#x6210;&#x5E74;&#x4E86;</span>
+<span class="hljs-keyword">if</span> age &gt;= <span class="hljs-number">18</span> :
+    print(<span class="hljs-string">&quot;&#x4F60;&#x5DF2;&#x7ECF;&#x6210;&#x5E74;&#x4E86;&#xFF01;&quot;</span>)
+
+<span class="hljs-comment"># if-else&#x8BED;&#x53E5;</span>
+<span class="hljs-comment"># &#x8BED;&#x6CD5;&#xFF1A;</span>
+<span class="hljs-comment">#    if &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A;</span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    else &#xFF1A;</span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment"># &#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;</span>
+<span class="hljs-comment">#    if-else&#x8BED;&#x53E5;&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5148;&#x5BF9;if&#x540E;&#x7684;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#x5224;&#x65AD;</span>
+<span class="hljs-comment">#        &#x5982;&#x679C;&#x4E3A;True&#xFF0C;&#x5219;&#x6267;&#x884C;if&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#        &#x5982;&#x679C;&#x4E3A;False&#xFF0C;&#x5219;&#x6267;&#x884C;else&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5757;</span>
+
+age = <span class="hljs-number">28</span>
+<span class="hljs-keyword">if</span> age &gt; <span class="hljs-number">17</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x5DF2;&#x7ECF;&#x6210;&#x5E74;&#x4E86;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x8FD8;&#x672A;&#x6210;&#x5E74;&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># if-elif-else&#x8BED;&#x53E5;</span>
+<span class="hljs-comment"># &#x8BED;&#x6CD5;&#xFF1A;</span>
+<span class="hljs-comment">#    if &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A;</span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    elif &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A; </span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    elif &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A; </span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    elif &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A; </span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    else &#xFF1A;</span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># &#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;</span>
+<span class="hljs-comment">#    if-elif-else&#x8BED;&#x53E5;&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x4F9D;&#x6B21;&#x5BF9;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#x5224;&#x65AD;</span>
+<span class="hljs-comment">#        &#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x4E3A;True&#xFF0C;&#x5219;&#x6267;&#x884C;&#x5F53;&#x524D;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x8BED;&#x53E5;&#x7ED3;&#x675F;</span>
+<span class="hljs-comment">#        &#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x4E3A;False&#xFF0C;&#x5219;&#x7EE7;&#x7EED;&#x5411;&#x4E0B;&#x5224;&#x65AD;&#xFF0C;&#x76F4;&#x5230;&#x627E;&#x5230;True&#x4E3A;&#x6B62;</span>
+<span class="hljs-comment">#        &#x5982;&#x679C;&#x6240;&#x6709;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x662F;False&#xFF0C;&#x5219;&#x6267;&#x884C;else&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    if-elif-else&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x4F1A;&#x6267;&#x884C;</span>
+
+age = <span class="hljs-number">80</span>
+
+<span class="hljs-keyword">if</span> age &gt; <span class="hljs-number">200</span> :
+    print(<span class="hljs-string">&apos;&#x6216;&#x8005;&#x53EF;&#x771F;&#x6CA1;&#x52B2;&#x5462;&#xFF01;&apos;</span>)
+<span class="hljs-keyword">elif</span> age &gt; <span class="hljs-number">100</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x4E5F;&#x662F;&#x8001;&#x5927;&#x4E0D;&#x5C0F;&#x4E86;!&apos;</span>)
+<span class="hljs-keyword">elif</span> age &gt;= <span class="hljs-number">60</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x5DF2;&#x7ECF;&#x9000;&#x4F11;&#x4E86;&#xFF01;&apos;</span>)
+<span class="hljs-keyword">elif</span> age &gt;= <span class="hljs-number">30</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x5DF2;&#x7ECF;&#x662F;&#x4E2D;&#x5E74;&#x4E86;&#xFF01;&apos;</span>)
+<span class="hljs-keyword">elif</span> age &gt;= <span class="hljs-number">18</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x5DF2;&#x7ECF;&#x6210;&#x5E74;&#x4E86;&#xFF01;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x4F60;&#x8FD8;&#x662F;&#x4E2A;&#x5C0F;&#x5B69;&#xFF01;&apos;</span>)
+</code></pre>
+<p>&#x7EC3;&#x4E60;1&#xFF1A;</p>
+<p>&#x200B;    &#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x6574;&#x6570;&#x3002;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x7A0B;&#x5E8F;&#x663E;&#x793A;&#x8FD9;&#x4E2A;&#x6570;&#x662F;&#x5947;&#x6570;&#x8FD8;&#x662F;&#x5076;&#x6570;&#x3002;</p>
+<p>&#x7EC3;&#x4E60;2&#xFF1A;</p>
+<p>&#x200B;    &#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x68C0;&#x67E5;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5E74;&#x4EFD;&#x662F;&#x5426;&#x95F0;&#x5E74;&#x3002;</p>
+<p>&#x200B;    &#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5E74;&#x4EFD;&#x53EF;&#x4EE5;&#x88AB;4&#x6574;&#x9664;&#x4E0D;&#x80FD;&#x88AB;100&#x6574;&#x9664;&#xFF0C;&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x88AB;400&#x6574;&#x9664;&#xFF0C;&#x8FD9;&#x4E2A;&#x5E74;&#x4EFD;&#x5C31;&#x662F;&#x95F0;&#x5E74;</p>
+<p>&#x7EC3;&#x4E60;3&#xFF1A;</p>
+<p>&#x200B;    &#x6211;&#x5BB6;&#x7684;&#x72D7;5&#x5C81;&#x4E86;&#xFF0C;5&#x5C81;&#x7684;&#x72D7;&#x76F8;&#x5F53;&#x4E8E;&#x591A;&#x5927;&#x5E74;&#x9F84;&#x7684;&#x4EBA;&#x5462;&#xFF1F;</p>
+<p>&#x200B;    &#x5176;&#x5B9E;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x72D7;&#x7684;&#x524D;&#x4E24;&#x5E74;&#x6BCF;&#x4E00;&#x5E74;&#x76F8;&#x5F53;&#x4E8E;&#x4EBA;&#x7C7B;&#x7684;10.5&#x5C81;&#xFF0C;&#x7136;&#x540E;&#x6BCF;&#x589E;&#x52A0;&#x4E00;&#x5E74;&#x5C31;&#x589E;&#x52A0;&#x56DB;&#x5C81;&#x3002;</p>
+<p>&#x200B;    &#x90A3;&#x4E48;5&#x5C81;&#x7684;&#x72D7;&#x76F8;&#x5F53;&#x4E8E;&#x4EBA;&#x7C7B;&#x7684;&#x5E74;&#x9F84;&#x5C31;&#x5E94;&#x8BE5;&#x662F;10.5+10.5+4+4+4 = 33&#x5C81;</p>
+<p>&#x200B;    &#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x72D7;&#x7684;&#x5E74;&#x9F84;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x7A0B;&#x5E8F;&#x663E;&#x793A;&#x5176;&#x76F8;&#x5F53;&#x4E8E;&#x4EBA;&#x7C7B;&#x7684;&#x5E74;&#x9F84;&#x3002;</p>
+<p>&#x200B;    &#x5982;&#x679C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x8D1F;&#x6570;&#xFF0C;&#x8BF7;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x63D0;&#x793A;&#x4FE1;&#x606F;</p>
+<p>&#x7EC3;&#x4E60;4&#xFF1A;</p>
+<p>&#x200B;    &#x4ECE;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x5C0F;&#x660E;&#x7684;&#x671F;&#x672B;&#x6210;&#x7EE9;&#xFF1A;</p>
+<p>&#x200B;        &#x5F53;&#x6210;&#x7EE9;&#x4E3A;100&#x65F6;&#xFF0C;&#x201C;&#x5956;&#x52B1;&#x4E00;&#x8F86;BMW&#x201D;</p>
+<p>&#x200B;        &#x5F53;&#x6210;&#x7EE9;&#x4E3A;[80-99]&#x65F6;&#xFF0C;&#x201C;&#x5956;&#x52B1;&#x4E00;&#x53F0;IPhone&#x201D;</p>
+<p>&#x200B;        &#x5F53;&#x6210;&#x7EE9;&#x4E3A;[60-79]&#x65F6;&#xFF0C;&#x201C;&#x5956;&#x52B1;&#x4E00;&#x672C;&#x53C2;&#x8003;&#x4E66;&#x201D;</p>
+<p>&#x200B;        &#x5176;&#x4ED6;&#x65F6;&#xFF0C;&#x4EC0;&#x4E48;&#x5956;&#x52B1;&#x4E5F;&#x6CA1;&#x6709;&#x3002;</p>
+<p>&#x7EC3;&#x4E60;5&#xFF1A;</p>
+<p>&#x200B;    &#x5927;&#x5BB6;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x7537;&#x5927;&#x5F53;&#x5A5A;&#xFF0C;&#x5973;&#x5927;&#x5F53;&#x5AC1;&#x3002;&#x90A3;&#x4E48;&#x5973;&#x65B9;&#x5BB6;&#x957F;&#x8981;&#x5AC1;&#x5973;&#x513F;&#xFF0C;&#x5F53;&#x7136;&#x8981;&#x63D0;&#x51FA;&#x4E00;&#x5B9A;&#x7684;&#x6761;&#x4EF6;&#xFF1A;</p>
+<p>&#x200B;        &#x9AD8;&#xFF1A;180cm&#x4EE5;&#x4E0A;&#xFF1B;&#x5BCC;&#xFF1A;1000&#x4E07;&#x4EE5;&#x4E0A;&#xFF1B;&#x5E05;&#xFF1A;500&#x4EE5;&#x4E0A;&#xFF1B;</p>
+<p>&#x200B;        &#x5982;&#x679C;&#x8FD9;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#x540C;&#x65F6;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;&#x201C;&#x6211;&#x4E00;&#x5B9A;&#x8981;&#x5AC1;&#x7ED9;&#x4ED6;&#x201D;</p>
+<p>&#x200B;        &#x5982;&#x679C;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#x6709;&#x4E3A;&#x771F;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5219;&#x201C;&#x5AC1;&#x5427;&#xFF0C;&#x6BD4;&#x4E0A;&#x4E0D;&#x8DB3;&#xFF0C;&#x6BD4;&#x4E0B;&#x6709;&#x4F59;&#x201D;</p>
+<p>&#x200B;        &#x5982;&#x679C;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#x90FD;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;&#x201C;&#x4E0D;&#x5AC1;&#x201D;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x7EC3;&#x4E60;1</span>
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x6574;&#x6570;</span>
+num = int(input(<span class="hljs-string">&apos;&#x6E05;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x7684;&#x6574;&#x6570;&#xFF1A;&apos;</span>))
+
+<span class="hljs-comment">#&#x663E;&#x793A;num&#x662F;&#x5947;&#x6570;&#x8FD8;&#x662F;&#x5076;&#x6570;</span>
+<span class="hljs-keyword">if</span> num % <span class="hljs-number">2</span> == <span class="hljs-number">0</span> :
+    print(num,<span class="hljs-string">&apos;&#x662F;&#x5076;&#x6570;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(num,<span class="hljs-string">&apos;&#x662F;&#x5947;&#x6570;&apos;</span>)
+
+<span class="hljs-comment"># &#x7EC3;&#x4E60;2</span>
+year = int(input(<span class="hljs-string">&apos;&#x6E05;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x4EFB;&#x610F;&#x7684;&#x5E74;&#x4EFD;&apos;</span>))
+<span class="hljs-comment"># &#x68C0;&#x67E5;&#x8FD9;&#x4E2A;&#x5E74;&#x4EFD;&#x662F;&#x5426;&#x662F;&#x95F0;&#x5E74;</span>
+<span class="hljs-keyword">if</span> year % <span class="hljs-number">4</span> == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> year % <span class="hljs-number">100</span> != <span class="hljs-number">0</span> <span class="hljs-keyword">or</span> year % <span class="hljs-number">400</span> == <span class="hljs-number">0</span> :
+    print(year,<span class="hljs-string">&apos;&#x662F;&#x95F0;&#x5E74;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(year,<span class="hljs-string">&apos;&#x662F;&#x5E73;&#x5E74;&apos;</span>)
+
+<span class="hljs-comment"># &#x7EC3;&#x4E60;3</span>
+dog_age  = float(input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x72D7;&#x7684;&#x5E74;&#x9F84;&#xFF1A;&apos;</span>))
+like_person_age = <span class="hljs-number">0</span>
+<span class="hljs-comment"># &#x68C0;&#x67E5;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x662F;&#x5426;&#x5408;&#x6CD5;</span>
+<span class="hljs-keyword">if</span> dog_age &gt; <span class="hljs-number">0</span> :
+    <span class="hljs-comment">#&#x5982;&#x679C;&#x72D7;&#x7684;&#x5E74;&#x9F84;&#x5728;2&#x5C81;&#x4EE5;&#x4E0B;(&#x5305;&#x542B;2&#x5C81;)</span>
+    <span class="hljs-keyword">if</span> dog_age &lt;= <span class="hljs-number">2</span> :
+        <span class="hljs-comment"># &#x76F4;&#x63A5;&#x5C06;&#x5F53;&#x524D;&#x7684;&#x5E74;&#x9F84;&#x4E58;&#x4EE5;10.5</span>
+        like_person_age = dog_age * <span class="hljs-number">10.5</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;&#x72D7;&#x7684;&#x5E74;&#x9F84;&#x5728;&#x4E24;&#x5C81;&#x4EE5;&#x4E0A;</span>
+    <span class="hljs-keyword">else</span> :
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x524D;&#x4E24;&#x5C81;&#x76F8;&#x5F53;&#x4E8E;&#x4EBA;&#x7684;&#x5E74;&#x7EAA;</span>
+        like_person_age = <span class="hljs-number">2</span> * <span class="hljs-number">10.5</span>
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x8D85;&#x8FC7;&#x4E24;&#x5C81;&#x7684;&#x90E8;&#x5206;&#x76F8;&#x5BF9;&#x4E8E;&#x4EBA;&#x7C7B;&#x7684;&#x5E74;&#x7EAA;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x76F8;&#x52A0;</span>
+        like_person_age += (dog_age - <span class="hljs-number">2</span>) * <span class="hljs-number">4</span>
+    print(dog_age,<span class="hljs-string">&apos;&#x5C81;&#x7684;&#x72D7;&#xFF0C;&#x5E74;&#x7EAA;&#x76F8;&#x5F53;&#x4E8E;&apos;</span>,like_person_age,<span class="hljs-string">&apos;&#x5C81;&#x7684;&#x4EBA;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x60A8;&#x7684;&#x8F93;&#x5165;&#x4E0D;&#x5408;&#x6CD5;&apos;</span>)
+
+<span class="hljs-comment"># &#x7EC3;&#x4E60;4&#xFF1A;</span>
+
+<span class="hljs-comment">#&#x83B7;&#x53D6;&#x5C0F;&#x660E;&#x7684;&#x6210;&#x7EE9;</span>
+score = int(input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x4F60;&#x7684;&#x671F;&#x672B;&#x6210;&#x7EE9;&#xFF1A;&apos;</span>))
+
+<span class="hljs-comment"># &#x68C0;&#x67E5;&#x7528;&#x6237;&#x7684;&#x8F93;&#x5165;&#x662F;&#x5426;&#x5408;&#x6CD5;</span>
+<span class="hljs-keyword">if</span> <span class="hljs-number">0</span> &lt;= score &lt;= <span class="hljs-number">100</span> :
+    <span class="hljs-comment"># &#x5224;&#x65AD;&#x53D1;&#x7ED9;&#x7684;&#x5956;&#x52B1;</span>
+    <span class="hljs-keyword">if</span> score == <span class="hljs-number">100</span> :
+        print(<span class="hljs-string">&apos;&#x5B9D;&#x9A6C;&#xFF0C;&#x90A3;&#x53BB;&#x73A9;&#xFF01;&apos;</span>)
+    <span class="hljs-keyword">elif</span> score &gt;= <span class="hljs-number">80</span> :
+        print(<span class="hljs-string">&apos;&#x82F9;&#x679C;&#x624B;&#x673A;&#xFF0C;&#x90A3;&#x53BB;&#x73A9;&apos;</span>)
+    <span class="hljs-keyword">elif</span> score &gt;= <span class="hljs-number">60</span> :
+        print(<span class="hljs-string">&apos;&#x53C2;&#x8003;&#x4E66;&#xFF0C;&#x90A3;&#x53BB;&#x73A9;&apos;</span>)
+    <span class="hljs-keyword">else</span> :
+        print(<span class="hljs-string">&apos;&#x68CD;&#x5B50;&#x4E00;&#x6839;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x60A8;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x5408;&#x6CD5;&#x3002;&apos;</span>)
+
+<span class="hljs-comment"># &#x7EC3;&#x4E60;5&#xFF1A;</span>
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x4E09;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x8EAB;&#x9AD8;&#x3001;&#x8D22;&#x5BCC;&#x3001;&#x989C;&#x503C;</span>
+height = float(input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x4F60;&#x7684;&#x8EAB;&#x9AD8;&#xFF08;cm&#xFF09;&#xFF1A;&apos;</span>))
+money =  float(input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x4F60;&#x7684;&#x8D22;&#x5BCC;&#xFF08;&#x4E07;&#xFF09;&#xFF1A;&apos;</span>))
+face =  float(input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x4F60;&#x7684;&#x989C;&#x503C;&#xFF08;&#x5E73;&#x65B9;&#x5398;&#x7C73;&#xFF09;&#xFF1A;&apos;</span>))
+
+<span class="hljs-comment"># &#x5224;&#x65AD;&#x5230;&#x5E95;&#x5AC1;&#x4E0D;&#x5AC1;</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#x540C;&#x4E8B;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;&#x201C;&#x6211;&#x4E00;&#x5B9A;&#x8981;&#x5AC1;&#x7ED9;&#x4ED6;&#x201D;</span>
+<span class="hljs-keyword">if</span> height &gt; <span class="hljs-number">180</span> <span class="hljs-keyword">and</span> money &gt; <span class="hljs-number">1000</span> <span class="hljs-keyword">and</span> face &gt; <span class="hljs-number">500</span> :
+    print(<span class="hljs-string">&apos;&#x6211;&#x4E00;&#x5B9A;&#x8981;&#x5AC1;&#x7ED9;&#x4ED6;&apos;</span>)
+<span class="hljs-keyword">elif</span> height &gt; <span class="hljs-number">180</span> <span class="hljs-keyword">or</span> money &gt; <span class="hljs-number">1000</span> <span class="hljs-keyword">or</span> face &gt; <span class="hljs-number">500</span> : 
+    print(<span class="hljs-string">&apos;&#x6BD4;&#x4E0A;&#x4E0D;&#x8DB3;&#xFF0C;&#x6BD4;&#x4E0B;&#x6709;&#x4F59;&#xFF0C;&#x5AC1;&#x4E86;&#x5427;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x4E0D;&#x5AC1;&apos;</span>)
+</code></pre>
+<h2 id="&#x5FAA;&#x73AF;&#x8BED;&#x53E5;">&#x5FAA;&#x73AF;&#x8BED;&#x53E5;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5FAA;&#x73AF;&#x8BED;&#x53E5;</span>
+<span class="hljs-comment"># &#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x4F7F;&#x5236;&#x5B9A;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x91CD;&#x590D;&#x6307;&#x5B9A;&#x7684;&#x6B21;&#x6570;</span>
+<span class="hljs-comment"># &#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#x5206;&#x4E24;&#x79CD;&#xFF0C;while&#x5FAA;&#x73AF;&#x548C;for&#x5FAA;&#x73AF;</span>
+<span class="hljs-comment"># while&#x5FAA;&#x73AF;</span>
+<span class="hljs-comment"># &#x8BED;&#x6CD5;&#xFF1A;</span>
+<span class="hljs-comment">#    while &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#xFF1A;</span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment">#    else :</span>
+<span class="hljs-comment">#        &#x4EE3;&#x7801;&#x5757;</span>
+<span class="hljs-comment"># &#x6267;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;</span>
+<span class="hljs-comment">#    while&#x8BED;&#x53E5;&#x5728;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x4F1A;&#x5148;&#x5BF9;while&#x540E;&#x7684;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#x5224;&#x65AD;</span>
+<span class="hljs-comment">#        &#x5982;&#x679C;&#x5224;&#x65AD;&#x7ED3;&#x679C;&#x4E3A;True&#xFF0C;&#x5219;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4F53;&#xFF08;&#x4EE3;&#x7801;&#x5757;&#xFF09;</span>
+<span class="hljs-comment">#        &#x5FAA;&#x73AF;&#x4F53;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x7EE7;&#x7EED;&#x5BF9;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6C42;&#x503C;&#x6F58;&#x5BB6;&#x6BB5;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;</span>
+<span class="hljs-comment">#        &#x76F4;&#x5230;&#x5224;&#x65AD;&#x7ED3;&#x679C;&#x4E3A;False&#xFF0C;&#x5219;&#x5FAA;&#x73AF;&#x7EC8;&#x6B62;&#xFF0C;&#x5982;&#x679C;&#x5FAA;&#x73AF;&#x6709;&#x5BF9;&#x5E94;&#x7684;else&#xFF0C;&#x5219;&#x6267;&#x884C;else&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5757;</span>
+
+<span class="hljs-comment"># &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x6052;&#x4E3A;True&#x7684;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF0C;&#x79F0;&#x4E3A;&#x6B7B;&#x5FAA;&#x73AF;&#xFF0C;&#x5B83;&#x4F1A;&#x4E00;&#x76F4;&#x8FD0;&#x884C;&#xFF0C;&#x614E;&#x7528;&#xFF01;</span>
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span> :
+    print(<span class="hljs-string">&apos;hello&apos;</span>)
+
+<span class="hljs-comment"># &#x5FAA;&#x73AF;&#x7684;&#x4E09;&#x4E2A;&#x8981;&#x4EF6;&#xFF08;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;</span>
+<span class="hljs-comment"># &#x521D;&#x59CB;&#x5316;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;&#x521D;&#x59CB;&#x5316;&#x8868;&#x8FBE;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;</span>
+i = <span class="hljs-number">0</span>
+<span class="hljs-comment"># &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F; &#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x7684;&#x6761;&#x4EF6;</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span> :
+    <span class="hljs-comment"># &#x66F4;&#x65B0;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x66F4;&#x6539;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x503C;</span>
+    i += <span class="hljs-number">1</span>
+    print(<span class="hljs-string">&apos;hello&apos;</span>)
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5341;&#x6B21;&#x7684;&#x5FAA;&#x73AF;</span>
+i = <span class="hljs-number">0</span> 
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">10</span> :
+    i += <span class="hljs-number">1</span>
+    print(i,<span class="hljs-string">&apos;hello&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;else&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5757;&apos;</span>)
+</code></pre>
+<p>&#x7EC3;&#x4E60;1&#xFF1A;</p>
+<p>&#x200B;    &#x7403;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;&#x5947;&#x6570;&#x4E4B;&#x548C;</p>
+<p>&#x7EC3;&#x4E60;2&#xFF1A;</p>
+<p>&#x200B;    &#x6C42;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;7&#x7684;&#x500D;&#x6570;&#x4E4B;&#x548C;&#xFF0C;&#x4EE5;&#x53CA;&#x4E2A;&#x6570;</p>
+<p>&#x7EC3;&#x4E60;3&#xFF1A;</p>
+<p>&#x200B;    &#x6C34;&#x4ED9;&#x82B1;&#x6570;&#x662F;&#x6307;&#x4E00;&#x4E2A;n&#x4F4D;&#x6570;&#xFF08;n&#x2265;3&#xFF09;&#xFF0C;&#x5B83;&#x7684;&#x6BCF;&#x4E2A;&#x4F4D;&#x4E0A;&#x7684;&#x6570;&#x5B57;&#x7684;n&#x6B21;&#x5E42;&#x4E4B;&#x548C;&#x7B49;&#x4E8E;&#x5B83;&#x672C;&#x8EAB;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;1^3 + 5^3 + 3^3 = 153&#xFF09;&#x3002;</p>
+<p>&#x200B;    &#x6C42;1000&#x4EE5;&#x5185;&#x7684;&#x6240;&#x6709;&#x7684;&#x6C34;&#x4ED9;&#x82B1;&#x6570;</p>
+<p>&#x7EC3;&#x4E60;4&#xFF1A;</p>
+<p>&#x200B;    &#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x4EFB;&#x610F;&#x6570;&#xFF0C;&#x5224;&#x65AD;&#x5176;&#x662F;&#x5426;&#x662F;&#x8D28;&#x6570;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6C42;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;&#x5947;&#x6570;&#x4E4B;&#x548C;</span>
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x6240;&#x6709;100&#x4EE5;&#x5185;&#x7684;&#x6570;</span>
+i = <span class="hljs-number">0</span>
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7ED3;&#x679C;</span>
+result = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">100</span> :
+    i += <span class="hljs-number">1</span>
+    <span class="hljs-comment"># &#x5224;&#x65AD;i&#x662F;&#x5426;&#x662F;&#x5947;&#x6570;</span>
+    <span class="hljs-keyword">if</span> i % <span class="hljs-number">2</span> != <span class="hljs-number">0</span> :
+        result += i
+
+print(result)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x5947;&#x6570;</span>
+i = <span class="hljs-number">1</span> 
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">100</span>:
+    print(i)
+    i += <span class="hljs-number">2</span>
+
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;100&#x4EE5;&#x5185;&#x6240;&#x6709;7&#x7684;&#x500D;&#x6570;&#x4E4B;&#x548C;&#xFF0C;&#x4EE5;&#x53CA;&#x4E2A;&#x6570;</span>
+i = <span class="hljs-number">7</span>
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x4FDD;&#x5B58;&#x7ED3;&#x679C;</span>
+result = <span class="hljs-number">0</span>
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x8BA1;&#x7B97;&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x6B21;&#x6570;</span>
+n = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">100</span>:
+    result += i
+    i += <span class="hljs-number">7</span>
+    n += <span class="hljs-number">1</span>
+print(<span class="hljs-string">&apos;&#x603B;&#x548C;&#x4E3A;&#xFF1A;&apos;</span>,result,<span class="hljs-string">&quot;&#x6B21;&#x6570;&#x4E3A;&#xFF1A;&quot;</span>,n)
+
+<span class="hljs-comment"># &#x6C34;&#x4ED9;&#x82B1;&#x6570;</span>
+<span class="hljs-comment"># &#x83B7;&#x53D6;1000&#x4EE5;&#x5185;&#x7684;&#x4E09;&#x4F4D;&#x6570;</span>
+i = <span class="hljs-number">100</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">1000</span> :
+    <span class="hljs-comment"># &#x5224;&#x65AD;i&#x662F;&#x5426;&#x662F;&#x6C34;&#x4ED9;&#x82B1;&#x6570;</span>
+    <span class="hljs-comment"># &#x5047;&#x8BBE;i&#x7684;&#x767E;&#x4F4D;&#x6570;&#x662F;a&#xFF0C;&#x5341;&#x4F4D;&#x6570;&#x662F;b&#xFF0C;&#x4E2A;&#x4F4D;&#x6570;&#x662F;c</span>
+    <span class="hljs-comment"># &#x767E;&#x4F4D;&#x6570;</span>
+    a = i // <span class="hljs-number">100</span>
+    <span class="hljs-comment"># &#x5341;&#x4F4D;&#x6570;</span>
+    b = i // <span class="hljs-number">10</span> % <span class="hljs-number">10</span>
+    <span class="hljs-comment"># &#x4E2A;&#x4F4D;&#x6570;</span>
+    c = i % <span class="hljs-number">10</span>
+    <span class="hljs-comment"># &#x5224;&#x65AD;&#x6C34;&#x4ED9;&#x82B1;&#x6570;</span>
+    <span class="hljs-keyword">if</span> a ** <span class="hljs-number">3</span> + b**<span class="hljs-number">3</span> + c**<span class="hljs-number">3</span> == i:
+        print(i)
+    i += <span class="hljs-number">1</span>
+
+<span class="hljs-comment"># &#x5224;&#x65AD;&#x8D28;&#x6570;</span>
+num = int(input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x4EFB;&#x610F;&#x7684;&#x5927;&#x4E8E;1&#x7684;&#x6574;&#x6570;&#xFF1A;&apos;</span>))
+
+<span class="hljs-comment"># &#x5224;&#x65AD;number&#x662F;&#x5426;&#x662F;&#x8D28;&#x6570;</span>
+i = <span class="hljs-number">2</span>
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x7528;&#x6765;&#x8BB0;&#x5F55;num&#x662F;&#x5426;&#x662F;&#x8D28;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;num&#x662F;&#x8D28;&#x6570;</span>
+flag = <span class="hljs-keyword">True</span>
+<span class="hljs-keyword">while</span> i &lt; num:
+    <span class="hljs-comment"># &#x5224;&#x65AD;num&#x80FD;&#x5426;&#x88AB;i&#x6574;&#x9664;</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;num&#x80FD;&#x88AB;i&#x6574;&#x9664;&#xFF0C;&#x5219;&#x8BF4;&#x660E;num&#x4E00;&#x5B9A;&#x4E0D;&#x662F;&#x8D28;&#x6570;</span>
+    <span class="hljs-keyword">if</span> num % i == <span class="hljs-number">0</span>:
+        flag = <span class="hljs-keyword">False</span>
+    i += <span class="hljs-number">1</span>
+<span class="hljs-keyword">if</span> flag :
+    print(num,<span class="hljs-string">&apos;&#x662F;&#x8D28;&#x6570;&apos;</span>)
+<span class="hljs-keyword">else</span> :
+    print(num,<span class="hljs-string">&apos;&#x4E0D;&#x662F;&#x8D28;&#x6570;&apos;</span>)
+</code></pre>
+<h2 id="&#x5FAA;&#x73AF;&#x5D4C;&#x5957;">&#x5FAA;&#x73AF;&#x5D4C;&#x5957;</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5728;&#x63A7;&#x5236;&#x53F0;&#x6253;&#x5370;&#x5982;&#x4E0B;&#x56FE;&#x5F62;</span>
+<span class="hljs-comment"># ******</span>
+<span class="hljs-comment"># ******</span>
+<span class="hljs-comment"># ******</span>
+<span class="hljs-comment"># ******</span>
+<span class="hljs-comment"># ******</span>
+<span class="hljs-comment"># &#x5FAA;&#x73AF;&#x5D4C;&#x5957;&#x65F6;&#xFF0C;&#x5916;&#x5C42;&#x5FAA;&#x73AF;&#x6BCF;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x90FD;&#x8981;&#x6267;&#x884C;&#x4E00;&#x5708;</span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x6765;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x9AD8;&#x5EA6;</span>
+i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x5BBD;&#x5EA6;</span>
+    j = <span class="hljs-number">0</span> 
+    <span class="hljs-keyword">while</span> j &lt; <span class="hljs-number">5</span>:
+        print(<span class="hljs-string">&apos;*&apos;</span>,end=<span class="hljs-string">&apos;&apos;</span>)
+        j += <span class="hljs-number">1</span>    
+    print()
+    i += <span class="hljs-number">1</span>
+
+<span class="hljs-comment"># *       j&lt;1    i = 0</span>
+<span class="hljs-comment"># **      j&lt;2    i = 1</span>
+<span class="hljs-comment"># ***     j&lt;3    i = 2</span>
+<span class="hljs-comment"># ****    j&lt;4    i = 3</span>
+<span class="hljs-comment"># *****   j&lt;5    i = 4</span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x6765;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x9AD8;&#x5EA6;</span>
+i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x5BBD;&#x5EA6;</span>
+    j = <span class="hljs-number">0</span> 
+    <span class="hljs-keyword">while</span> j &lt; i+<span class="hljs-number">1</span>:
+        print(<span class="hljs-string">&apos;*&apos;</span>,end=<span class="hljs-string">&apos;&apos;</span>)
+        j += <span class="hljs-number">1</span>    
+    print()
+    i += <span class="hljs-number">1</span>
+
+
+<span class="hljs-comment"># *****     </span>
+<span class="hljs-comment"># ****     </span>
+<span class="hljs-comment"># ***    </span>
+<span class="hljs-comment"># **    </span>
+<span class="hljs-comment"># *   </span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x6765;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x9AD8;&#x5EA6;</span>
+i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x5BBD;&#x5EA6;</span>
+    j = <span class="hljs-number">0</span> 
+    <span class="hljs-keyword">while</span> j &lt; i+<span class="hljs-number">1</span>:
+        print(<span class="hljs-string">&apos;*&apos;</span>,end=<span class="hljs-string">&apos;&apos;</span>)
+        j += <span class="hljs-number">1</span>    
+    print()
+    i += <span class="hljs-number">1</span>
+</code></pre>
+<p>&#x7EC3;&#x4E60;1&#xFF1A;&#x6253;&#x5370;99&#x4E58;&#x6CD5;&#x8868;</p>
+<p>&#x7EC3;&#x4E60;2&#xFF1A;&#x6C42;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;&#x8D28;&#x6570;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 99&#x4E58;&#x6CD5;&#x8868;</span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5916;&#x5C42;&#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x9AD8;&#x5EA6;</span>
+i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">9</span>:
+    i += <span class="hljs-number">1</span>
+
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x6765;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x5BBD;&#x5EA6;</span>
+    j = <span class="hljs-number">0</span> 
+    <span class="hljs-keyword">while</span> j &lt; i :
+        j + = <span class="hljs-number">1</span>
+        print(f<span class="hljs-string">&apos;{j}*{i}={i*j}&apos;</span>,end=<span class="hljs-string">&apos; &apos;</span>)
+    print()
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6C42;100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;&#x8D28;&#x6570;</span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#xFF0C;&#x6C42;1-100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;&#x6570;</span>
+i = <span class="hljs-number">2</span>
+<span class="hljs-keyword">while</span> i&lt;=<span class="hljs-number">100</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x8BB0;&#x5F55;i&#x7684;&#x72B6;&#x6001;</span>
+    flag = <span class="hljs-keyword">True</span>
+
+    <span class="hljs-comment"># &#x5224;&#x65AD;i&#x662F;&#x5426;&#x662F;&#x8D28;&#x6570;</span>
+    <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x6210;&#x4E3A;i&#x7684;&#x56E0;&#x6570;&#x7684;&#x6570;</span>
+    j = <span class="hljs-number">2</span>
+    <span class="hljs-keyword">while</span> j &lt; i :
+        <span class="hljs-comment"># &#x5224;&#x65AD;i&#x80FD;&#x5426;&#x88AB;j&#x6574;&#x9664;</span>
+        <span class="hljs-keyword">if</span> i % j == <span class="hljs-number">0</span>:
+            <span class="hljs-comment"># i&#x80FD;&#x88AB;j&#x6574;&#x9664;&#xFF0C;i&#x4E0D;&#x662F;&#x8D28;&#x6570;</span>
+            flag = <span class="hljs-keyword">False</span>
+
+        j += <span class="hljs-number">1</span>
+    <span class="hljs-comment"># &#x9A8C;&#x8BC1;&#x540E;&#x7ED3;&#x679C;&#x5E76;&#x8F93;&#x51FA;</span>
+    <span class="hljs-keyword">if</span> flag :
+        print(i)
+    i += <span class="hljs-number">1</span>
+</code></pre>
+<h2 id="break--continue">break &amp; continue</h2>
+<pre><code class="lang-python"><span class="hljs-comment"># break</span>
+<span class="hljs-comment"># break &#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7ACB;&#x5373;&#x9000;&#x51FA;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF0C;&#x5305;&#x62EC;else</span>
+<span class="hljs-comment"># continue</span>
+<span class="hljs-comment">#continue &#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8DF3;&#x8FC7;&#x6863;&#x6B21;&#x5FAA;&#x73AF;</span>
+<span class="hljs-comment"># break&#x548C;continue&#x90FD;&#x662F;&#x53EA;&#x5BF9;&#x79BB;&#x4ED6;&#x6700;&#x8FD1;&#x7684;&#x5FAA;&#x73AF;&#x8D77;&#x4F5C;&#x7528;</span>
+<span class="hljs-comment"># pass</span>
+<span class="hljs-comment"># pass &#x662F;&#x7528;&#x6765;&#x7AD9;&#x4F4D;&#x7684;&#xFF0C;&#x4FDD;&#x8BC1;&#x7A0B;&#x5E8F;&#x4E0D;&#x51FA;&#x9519;&#x8BEF; &#x3002;&#x6CA1;&#x6709;&#x5B9E;&#x9645;&#x4F5C;&#x7528;</span>
+
+
+<span class="hljs-comment">#&#x521B;&#x5EFA;&#x4E00;&#x4E2A;5&#x6B21;&#x7684;&#x5FAA;&#x73AF;</span>
+i = <span class="hljs-number">0</span> 
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span> :
+    <span class="hljs-keyword">if</span> i == <span class="hljs-number">3</span> :
+        <span class="hljs-keyword">break</span>
+    print(i)
+    i += <span class="hljs-number">1</span>
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&apos;</span>)
+
+i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>:
+    i += <span class="hljs-number">5</span>
+    <span class="hljs-keyword">if</span>(i == <span class="hljs-number">2</span>)
+        <span class="hljs-keyword">continue</span>
+    print(i)
+<span class="hljs-keyword">else</span> :
+    print(<span class="hljs-string">&apos;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&apos;</span>)
+
+i = <span class="hljs-number">0</span>
+<span class="hljs-keyword">if</span> i&lt;<span class="hljs-number">5</span>:
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6027;&#x80FD;&#x4F18;&#x5316;</span>
+<span class="hljs-comment"># &#x6A21;&#x5757;&#xFF0C;&#x901A;&#x8FC7;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5BF9;Python&#x8FDB;&#x884C;&#x6269;&#x5C55;</span>
+<span class="hljs-comment"># &#x5F15;&#x5165;&#x4E00;&#x4E2A;time&#x6A21;&#x5757;&#xFF0C;&#x6765;&#x7EDF;&#x8BA1;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;</span>
+<span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> *
+<span class="hljs-comment"># time()&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x5355;&#x4F4D;&#x662F;&#x79D2;</span>
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x95F4;</span>
+<span class="hljs-comment"># &#x4F18;&#x5316;&#x524D;&#xFF1A;</span>
+<span class="hljs-comment">#     10000&#x4E2A;&#x6570;   12.298&#x79D2;</span>
+<span class="hljs-comment">#    100000&#x4E2A;&#x6570;  &#x6CA1;&#x6709;&#x7ED3;&#x679C;</span>
+<span class="hljs-comment"># &#x7B2C;&#x4E00;&#x6B21;&#x4F18;&#x5316;</span>
+<span class="hljs-comment">#     10000&#x4E2A;&#x6570;   1.577&#x79D2;</span>
+<span class="hljs-comment">#    100000&#x4E2A;&#x6570;  170.645&#x79D2;</span>
+<span class="hljs-comment"># &#x7B2C;&#x4E8C;&#x6B21;&#x4F18;&#x5316;</span>
+<span class="hljs-comment">#    10000&#x4E2A;&#x6570;        0.068&#x79D2;</span>
+<span class="hljs-comment">#    100000&#x4E2A;&#x6570;    1.646&#x79D2;</span>
+<span class="hljs-comment"># 36&#x7684;&#x56E0;&#x6570;</span>
+<span class="hljs-comment">#    2 18</span>
+<span class="hljs-comment">#    3 12</span>
+<span class="hljs-comment">#    4 9</span>
+<span class="hljs-comment">#    6 6</span>
+
+
+begin = time()
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#xFF0C;&#x6C42;1-100&#x4EE5;&#x5185;&#x6240;&#x6709;&#x7684;&#x6570;</span>
+i = <span class="hljs-number">2</span>
+<span class="hljs-keyword">while</span> i&lt;=<span class="hljs-number">100</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x8BB0;&#x5F55;i&#x7684;&#x72B6;&#x6001;</span>
+    flag = <span class="hljs-keyword">True</span>
+
+    <span class="hljs-comment"># &#x5224;&#x65AD;i&#x662F;&#x5426;&#x662F;&#x8D28;&#x6570;</span>
+    <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x6210;&#x4E3A;i&#x7684;&#x56E0;&#x6570;&#x7684;&#x6570;</span>
+    j = <span class="hljs-number">2</span>
+    <span class="hljs-keyword">while</span> j &lt;= i ** <span class="hljs-number">0.5</span> :
+        <span class="hljs-comment"># &#x5224;&#x65AD;i&#x80FD;&#x5426;&#x88AB;j&#x6574;&#x9664;</span>
+        <span class="hljs-keyword">if</span> i % j == <span class="hljs-number">0</span>:
+            <span class="hljs-comment"># i&#x80FD;&#x88AB;j&#x6574;&#x9664;&#xFF0C;i&#x4E0D;&#x662F;&#x8D28;&#x6570;</span>
+            flag = <span class="hljs-keyword">False</span>
+            <span class="hljs-comment"># &#x4E00;&#x65E6;&#x8FDB;&#x5165;&#x5224;&#x65AD;&#xFF0C;&#x5219;&#x8BC1;&#x660E;i&#x4E00;&#x5B9A;&#x4E0D;&#x662F;&#x8D28;&#x6570;&#xFF0C;&#x6B64;&#x65F6;&#x5185;&#x5C42;&#x5FAA;&#x73AF;&#x6CA1;&#x6709;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x7684;&#x5FC5;&#x8981;</span>
+            <span class="hljs-comment"># &#x4F7F;&#x7528;break&#x6765;&#x9000;&#x51FA;&#x5185;&#x5C42;&#x7684;&#x5FAA;&#x73AF;</span>
+            <span class="hljs-keyword">break</span>
+        j += <span class="hljs-number">1</span>
+    <span class="hljs-comment"># &#x9A8C;&#x8BC1;&#x540E;&#x7ED3;&#x679C;&#x5E76;&#x8F93;&#x51FA;</span>
+    <span class="hljs-keyword">if</span> flag :
+        print(i)
+    i += <span class="hljs-number">1</span>
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;&#x65F6;&#x95F4;</span>
+end = time()
+<span class="hljs-comment"># &#x8BA1;&#x7B97;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4;</span>
+print(<span class="hljs-string">&apos;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x82B1;&#x8D39;&#x4E86;&#xFF1A;&apos;</span>,end-begin)
+</code></pre>
+<h2 id="&#x5C0F;&#x6E38;&#x620F;-&#x300A;&#x5510;&#x50E7;&#x5927;&#x6218;&#x767D;&#x9AA8;&#x7CBE;&#x300B;">&#x5C0F;&#x6E38;&#x620F; &#x300A;&#x5510;&#x50E7;&#x5927;&#x6218;&#x767D;&#x9AA8;&#x7CBE;&#x300B;</h2>
+<ol>
+<li><p>&#x8EAB;&#x4EFD;&#x9009;&#x62E9;</p>
+<p>&#x2460;&#x663E;&#x793A;&#x63D0;&#x793A;&#x4FE1;&#x606F;</p>
+<p>&#x200B;    &#x73AF;&#x5883;&#x5149;&#x4E34; xxx &#x6E38;&#x620F;&#xFF01;</p>
+<p>&#x200B;    &#x8BF7;&#x9009;&#x62E9;&#x4F60;&#x7684;&#x8EAB;&#x4EFD;&#xFF1A;</p>
+<p>&#x200B;        1.xxx</p>
+<p>&#x200B;        2.xxx</p>
+<p>&#x200B;    &#x8BF7;&#x9009;&#x62E9;&#xFF1A;x</p>
+<p>&#x2461;&#x6839;&#x636E;&#x7528;&#x6237;&#x9009;&#x62E9;&#x6765;&#x5206;&#x914D;&#x8EAB;&#x4EFD;&#xFF08;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x63D0;&#x793A;&#x6D88;&#x606F;&#xFF09;</p>
+<p>&#x200B;    1.---</p>
+<p>&#x200B;    2.---</p>
+<p>&#x200B;    3.---</p>
+</li>
+<li><p>&#x6E38;&#x620F;&#x8FDB;&#x884C;</p>
+<p>&#x2460;&#x663E;&#x793A;&#x73A9;&#x5BB6;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;(&#x653B;&#x51FB;&#x529B; &#x751F;&#x547D;&#x503C;)</p>
+<p>&#x2461;&#x663E;&#x793A;&#x73A9;&#x5BB6;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<p>&#x200B;    1.&#x7EC3;&#x7EA7;</p>
+<p>&#x200B;        &#x63D0;&#x5347;&#x73A9;&#x5BB6;&#x7684;&#x653B;&#x51FB;&#x529B;</p>
+<p>&#x200B;    2.&#x6253;BOSS</p>
+<p>&#x200B;        &#x73A9;&#x5BB6;&#x5BF9;BOSS &#x8FDB;&#x884C;&#x653B;&#x51FB;&#xFF0C;&#x73A9;&#x5BB6;&#x8981;&#x653B;&#x51FB;BOSS&#xFF0C;BOSS &#x5BF9;&#x73A9;&#x5BB6;&#x8FDB;&#x884C;&#x53CD;&#x51FB;</p>
+<p>&#x200B;        &#x8BA1;&#x7B97;BOSS&#x662F;&#x5426;&#x88AB;&#x73A9;&#x5BB6;&#x6D88;&#x706D;&#xFF0C;&#x73A9;&#x5BB6;&#x662F;&#x5426;&#x88AB;BOSS&#x6D88;&#x706D;</p>
+<p>&#x200B;        &#x6E38;&#x620F;&#x7ED3;&#x675F;</p>
+<p>&#x200B;    3.&#x9003;&#x8DD1;</p>
+<p>&#x200B;        &#x9000;&#x51FA;&#x6E38;&#x620F;&#xFF0C;&#x663E;&#x793A;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF0C;&#x6E38;&#x620F;&#x7ED3;&#x675F;&#xFF01;</p>
+</li>
+</ol>
+<pre><code class="lang-python">   <span class="hljs-comment"># &#x5510;&#x50E7;&#x5927;&#x6218;&#x767D;&#x9AA8;&#x7CBE;</span>
+   <span class="hljs-comment"># &#x663E;&#x793A;&#x6B22;&#x8FCE;&#x4FE1;&#x606F;</span>
+   print(<span class="hljs-string">&apos;=&apos;</span>*<span class="hljs-number">20</span>,<span class="hljs-string">&apos;&#x6B22;&#x8FCE;&#x5149;&#x4E34;&#x300A;&#x5510;&#x50E7;&#x5927;&#x6218;&#x767D;&#x9AA8;&#x7CBE;&#x300B;&apos;</span>,<span class="hljs-string">&apos;=&apos;</span>*<span class="hljs-number">20</span>)
+   <span class="hljs-comment"># &#x663E;&#x793A;&#x8EAB;&#x4EFD;&#x9009;&#x62E9;&#x7684;&#x4FE1;&#x606F;</span>
+   print(<span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;&#x4F60;&#x7684;&#x8EAB;&#x4EFD;&#xFF1A;&apos;</span>)
+   print(<span class="hljs-string">&apos;\t1.&#x5510;&#x50E7;&apos;</span>)
+   print(<span class="hljs-string">&apos;\t2.&#x767D;&#x9AA8;&#x7CBE;&apos;</span>)
+   <span class="hljs-comment"># &#x6E38;&#x620F;&#x7684;&#x8EAB;&#x4EFD;&#x9009;&#x62E9;</span>
+   player_choose = input(<span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;[1-2]&#xFF1A;&apos;</span>)
+
+   <span class="hljs-comment">#&#x6253;&#x5370;&#x4E00;&#x6761;&#x5206;&#x5272;&#x7EBF;</span>
+   print(<span class="hljs-string">&apos;-&apos;</span>*<span class="hljs-number">66</span>)
+   <span class="hljs-comment"># &#x6839;&#x636E;&#x7528;&#x6237;&#x7684;&#x9009;&#x62E9;&#x6765;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;</span>
+   <span class="hljs-keyword">if</span> player_choose == <span class="hljs-string">&apos;1&apos;</span> :
+       <span class="hljs-comment"># &#x9009;&#x62E9;1</span>
+       print(<span class="hljs-string">&apos;&#x4F60;&#x5DF2;&#x7ECF;&#x9009;&#x62E9;&#x4E86;1&#xFF0C;&#x4F60;&#x5C06;&#x4EE5;-&gt;&#x5510;&#x50E7;&lt;-&#x7684;&#x8EAB;&#x4EFD;&#x6765;&#x8FDB;&#x884C;&#x6E38;&#x620F;&apos;</span>)
+   <span class="hljs-keyword">elif</span> player_choose == <span class="hljs-string">&apos;2&apos;</span>:
+       <span class="hljs-comment"># &#x9009;&#x62E9;2</span>
+       print(<span class="hljs-string">&apos;&#x4F60;&#x7ADF;&#x7136;&#x9009;&#x62E9;&#x4E86;&#x767D;&#x9AA8;&#x7CBE;&#xFF0C;&#x592A;&#x4E0D;&#x8981;&#x8138;&#x4E86;&#xFF0C;&#x4F60;&#x5C06;&#x4EE5;-&gt;&#x5510;&#x50E7;&lt;-&#x7684;&#x8EAB;&#x4EFD;&#x6765;&#x8FDB;&#x884C;&#x6E38;&#x620F;&apos;</span>)
+   <span class="hljs-keyword">else</span> :
+       <span class="hljs-comment"># &#x9009;&#x62E9;3</span>
+       print(<span class="hljs-string">&apos;&#x4F60;&#x7684;&#x8F93;&#x5165;&#x6709;&#x8BEF;&#xFF0C;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x5206;&#x914D;&#xFF0C;&#x4F60;&#x5C06;&#x4EE5;-&gt;&#x5510;&#x50E7;&lt;-&#x7684;&#x8EAB;&#x4EFD;&#x6765;&#x8FDB;&#x884C;&#x6E38;&#x620F;&apos;</span>)
+   <span class="hljs-comment"># &#x8FDB;&#x5165;&#x6E38;&#x620F;</span>
+   <span class="hljs-comment"># &#x521B;&#x5EFA;&#x53D8;&#x91CF;&#xFF0C;&#x6765;&#x4FDD;&#x5B58;&#x73A9;&#x5BB6;&#x7684;&#x751F;&#x547D;&#x503C;&#x548C;&#x653B;&#x51FB;&#x529B;</span>
+   player_life = <span class="hljs-number">2</span> <span class="hljs-comment"># &#x751F;&#x547D;&#x503C;</span>
+   player_attack = <span class="hljs-number">2</span> <span class="hljs-comment"># &#x653B;&#x51FB;&#x529B;</span>
+
+   <span class="hljs-comment"># &#x521B;&#x5EFA;&#x53D8;&#x91CF;&#xFF0C;&#x6765;&#x4FDD;&#x5B58;BOSS&#x7684;&#x751F;&#x547D;&#x503C;&#x548C;&#x653B;&#x51FB;&#x529B;</span>
+   boss_life = <span class="hljs-number">10</span>
+   boss_attack = <span class="hljs-number">10</span>
+
+   <span class="hljs-comment">#&#x6253;&#x5370;&#x4E00;&#x6761;&#x5206;&#x5272;&#x7EBF;</span>
+   print(<span class="hljs-string">&apos;-&apos;</span>*<span class="hljs-number">66</span>)
+   <span class="hljs-comment">#&#x663E;&#x793A;&#x73A9;&#x5BB6;&#x7684;&#x4FE1;&#x606F;&#xFF08;&#x751F;&#x547D;&#x503C;&#xFF0C;&#x653B;&#x51FB;&#x529B;&#xFF09;</span>
+   print(f<span class="hljs-string">&apos;&#x5510;&#x50E7;&#xFF0C;&#x4F60;&#x7684;&#x751F;&#x547D;&#x503C;&#x662F;{player_life}, &#x4F60;&#x7684;&#x653B;&#x51FB;&#x529B;&#x662F; {player_atatck}&apos;</span>)
+
+   <span class="hljs-comment"># &#x7531;&#x4E8E;&#x6E38;&#x620F;&#x9009;&#x9879;&#x662F;&#x9700;&#x8981;&#x53CD;&#x590D;&#x663E;&#x793A;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x5C06;&#x5176;&#x7F16;&#x5199;&#x5230;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x4E2D;</span>
+   <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+
+       <span class="hljs-comment"># &#x663E;&#x793A;&#x6E38;&#x620F;&#x9009;&#x9879;&#xFF0C;&#x6E38;&#x620F;&#x6B63;&#x5F0F;&#x5F00;&#x59CB;</span>
+       print(<span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;&#x4F60;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;&apos;</span>)
+       print(<span class="hljs-string">&apos;\t1.&#x7EC3;&#x7EA7;&apos;</span>)
+       print(<span class="hljs-string">&apos;\t2.&#x6253;BOSS&apos;</span>)
+       print(<span class="hljs-string">&apos;\t3.&#x9003;&#x8DD1;&apos;</span>)
+
+       player_choose = input(<span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;&#x8981;&#x505A;&#x7684;&#x64CD;&#x4F5C;[1-3]&#xFF1A;&apos;</span>)
+       <span class="hljs-comment">#&#x6253;&#x5370;&#x4E00;&#x6761;&#x5206;&#x5272;&#x7EBF;</span>
+       print(<span class="hljs-string">&apos;-&apos;</span>*<span class="hljs-number">66</span>)
+
+       <span class="hljs-comment"># &#x5904;&#x7406;&#x7528;&#x6237;&#x7684;&#x9009;&#x62E9;</span>
+       <span class="hljs-keyword">if</span> player_choose == <span class="hljs-string">&apos;1&apos;</span>:
+           <span class="hljs-comment"># &#x589E;&#x52A0;&#x73A9;&#x5BB6;&#x7684;&#x751F;&#x547D;&#x503C;&#x548C;&#x653B;&#x51FB;&#x529B;</span>
+           player_life += <span class="hljs-number">2</span>
+           player_attack += <span class="hljs-number">2</span>
+           print(f<span class="hljs-string">&apos;&#x606D;&#x559C;&#x4F60;&#x5347;&#x7EA7;&#x4E86;&#xFF01;&#x4F60;&#x73B0;&#x5728;&#x7684;&#x751F;&#x547D;&#x503C;&#x662F; {player_life}, &#x653B;&#x51FB;&#x529B;&#x662F; {player_attack}&apos;</span>)
+           <span class="hljs-keyword">pass</span>
+       <span class="hljs-keyword">elif</span> player_choose == <span class="hljs-string">&apos;2&apos;</span>:
+           <span class="hljs-comment"># &#x73A9;&#x5BB6;&#x653B;&#x51FB;BOSS</span>
+           <span class="hljs-comment"># &#x51CF;&#x53BB;BOSS &#x7684;&#x751F;&#x547D;&#x503C;&#xFF0C;&#x51CF;&#x53BB;&#x7684;&#x751F;&#x547D;&#x503C;&#x5E94;&#x8BE5;&#x7B49;&#x4E8E;&#x73A9;&#x5BB6;&#x7684;&#x653B;&#x51FB;&#x529B;</span>
+           boss_life -= player_attack
+           <span class="hljs-comment">#&#x6253;&#x5370;&#x4E00;&#x6761;&#x5206;&#x5272;&#x7EBF;</span>
+           print(<span class="hljs-string">&apos;-&apos;</span>*<span class="hljs-number">66</span>)
+           print(f<span class="hljs-string">&apos;-&gt;&#x5510;&#x50E7;&lt;-&#x653B;&#x51FB;&#x4E86; -&gt;&#x767D;&#x9AA8;&#x7CBE;-&gt;&apos;</span>)
+           <span class="hljs-comment"># &#x5224;&#x65AD;BOSS&#x662F;&#x5426;&#x6B7B;&#x4EA1;</span>
+           <span class="hljs-keyword">if</span> boss_life &lt;= <span class="hljs-number">0</span> :
+               <span class="hljs-comment"># BOSS&#x6B7B;&#x4EA1;&#xFF0C;player&#x7701;&#x91CC;&#xFF0C;&#x6E38;&#x620F;&#x7ED3;&#x675F;</span>
+               print(f<span class="hljs-string">&apos;-&gt;&#x767D;&#x9AA8;&#x7CBE;&lt;- &#x6536;&#x5230;&#x4E86; {player_attack} &#x70B9;&#x4F24;&#x5BB3;&#xFF0C;&#x91CD;&#x4F24;&#x4E0D;&#x6CBB;&#xFF0C;&#x6B7B;&#x4EA1;&#x4E86;&apos;</span>)
+               <span class="hljs-comment"># &#x6E38;&#x620F;&#x7ED3;&#x675F;</span>
+               <span class="hljs-keyword">break</span>
+               <span class="hljs-keyword">pass</span>
+
+           <span class="hljs-comment">#BOSS&#x8981;&#x53CD;&#x51FB;&#x73A9;&#x5BB6;</span>
+           <span class="hljs-comment"># &#x51CF;&#x53BB;&#x73A9;&#x5BB6;&#x7684;&#x751F;&#x547D;&#x503C;</span>
+           player_life -= boss_attack
+           print(f<span class="hljs-string">&apos;-&gt;&#x767D;&#x9AA8;&#x7CBE;&lt;-&#x653B;&#x51FB;&#x4E86; -&gt;&#x5510;&#x50E7;-&gt;&apos;</span>)
+           <span class="hljs-comment"># &#x68C0;&#x67E5;&#x73A9;&#x5BB6;&#x662F;&#x5426;&#x6B7B;&#x4EA1;</span>
+           <span class="hljs-keyword">if</span> player_life &lt;= <span class="hljs-number">0</span>:
+               <span class="hljs-comment"># &#x73A9;&#x5BB6;&#x6B7B;&#x4EA1;</span>
+               print(f<span class="hljs-string">&apos;-&gt;&#x5510;&#x50E7;&lt;- &#x6536;&#x5230;&#x4E86;{boss_attack} &#x70B9;&#x4F24;&#x5BB3;&#xFF0C;&#x91CD;&#x4F24;&#x4E0D;&#x6CBB;&#xFF0C;&#x6B7B;&#x4EA1;&#x4E86;&apos;</span>)
+               <span class="hljs-comment"># &#x6E38;&#x620F;&#x7ED3;&#x675F;</span>
+               <span class="hljs-keyword">break</span>
+               <span class="hljs-keyword">pass</span>
+           <span class="hljs-keyword">pass</span>
+       <span class="hljs-keyword">elif</span> player_choose == <span class="hljs-string">&apos;3&apos;</span>:
+           <span class="hljs-comment"># &#x9003;&#x8DD1;&#xFF0C;&#x9000;&#x51FA;&#x6E38;&#x620F;</span>
+           print(<span class="hljs-string">&apos;-&gt;&#x5510;&#x50E7;&lt;- &#x4E00;&#x626D;&#x5934;&#xFF0C;&#x6492;&#x817F;&#x5C31;&#x8DD1;&#xFF01;GAME OVER!&apos;</span>)
+           <span class="hljs-keyword">break</span>
+           <span class="hljs-keyword">pass</span>
+       <span class="hljs-keyword">else</span> :
+           print(<span class="hljs-string">&apos;&#x4F60;&#x7684;&#x8F93;&#x5165;&#x6709;&#x8BEF;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x8F93;&#x5165;&#xFF01;&apos;</span>)
+           <span class="hljs-keyword">pass</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter2.html" class="navigation navigation-prev " aria-label="Previous page: 第二章 Python入门">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter4.html" class="navigation navigation-next " aria-label="Next page: 第四章 序列">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第三章 流程控制语句","level":"2.1.3","depth":2,"next":{"title":"第四章 序列","level":"2.1.4","depth":2,"path":"python/pythonjichu/chapter4.md","ref":"python/pythonjichu/chapter4.md","articles":[]},"previous":{"title":"第二章 Python入门","level":"2.1.2","depth":2,"path":"python/pythonjichu/chapter2.md","ref":"python/pythonjichu/chapter2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/pythonjichu/chapter3.md","mtime":"2019-04-29T09:14:17.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-30T09:16:41.177Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

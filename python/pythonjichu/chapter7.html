@@ -1,0 +1,855 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第七章 异常文件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../flask/readme.html" />
+    
+    
+    <link rel="prev" href="chapter6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">空间介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Python系列教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    Python基础教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    第一章 计算机基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    第二章 Python入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    第三章 流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    第四章 序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    第五章 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    第六章 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.7" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    第七章 异常文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../flask/readme.html">
+            
+                <a href="../flask/readme.html">
+            
+                    
+                    Flask教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../flask/chapter1.html">
+            
+                <a href="../flask/chapter1.html">
+            
+                    
+                    为什么要用Web框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../flask/chapter2.html">
+            
+                <a href="../flask/chapter2.html">
+            
+                    
+                    课程大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../flask/chapter3.html">
+            
+                <a href="../flask/chapter3.html">
+            
+                    
+                    Flask简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../flask/chapter4.html">
+            
+                <a href="../flask/chapter4.html">
+            
+                    
+                    Flask安装环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../flask/chapter5.html">
+            
+                <a href="../flask/chapter5.html">
+            
+                    
+                    Requirements文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../flask/chapter6.html">
+            
+                <a href="../flask/chapter6.html">
+            
+                    
+                    从HelloWorld开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../pachong/readme.html">
+            
+                <a href="../pachong/readme.html">
+            
+                    
+                    爬虫基础教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../deeplearning/readme.html">
+            
+                <a href="../deeplearning/readme.html">
+            
+                    
+                    深度学习教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java教程‌</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../java/javajichu/readme.html">
+            
+                <a href="../../java/javajichu/readme.html">
+            
+                    
+                    Java基础教程‌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../java/spring/readme.html">
+            
+                <a href="../../java/spring/readme.html">
+            
+                    
+                    Spring教程‌
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../java/springboot/readme.html">
+            
+                <a href="../../java/springboot/readme.html">
+            
+                    
+                    SpringBoot教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第七章 异常文件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E03;&#x7AE0;-&#x5F02;&#x5E38;&#x548C;&#x6587;&#x4EF6;">&#x7B2C;&#x4E03;&#x7AE0; &#x5F02;&#x5E38;&#x548C;&#x6587;&#x4EF6;</h1>
+<h2 id="&#x5F02;&#x5E38;">&#x5F02;&#x5E38;</h2>
+<p>&#x7A0B;&#x5E8F;&#x5728;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x5F53;&#x4E2D;&#xFF0C;&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<p>&#x200B;    &#x4F7F;&#x7528;&#x4E86;&#x6CA1;&#x6709;&#x8D4B;&#x503C;&#x8FC7;&#x7684;&#x53D8;&#x91CF;</p>
+<p>&#x200B;    &#x4F7F;&#x7528;&#x4E86;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x7D22;&#x5F15;</p>
+<p>&#x200B;    &#x9664;0</p>
+<p>&#x200B;    ...</p>
+<p>&#x5728;&#x8FD9;&#x4E9B;&#x9519;&#x8BEF;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x5176;&#x4E3A;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x7ACB;&#x5373;&#x7EC8;&#x6B62;&#xFF0C;&#x5F02;&#x5E38;&#x4EE5;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x5168;&#x90E8;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF01;</p>
+<h2 id="&#x5904;&#x7406;&#x5F02;&#x5E38;">&#x5904;&#x7406;&#x5F02;&#x5E38;</h2>
+<p>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x76EE;&#x7684;&#x5E76;&#x4E0D;&#x662F;&#x8BA9;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x76F4;&#x63A5;&#x7EC8;&#x6B62;&#xFF01;</p>
+<p>Python&#x662F;&#x5E0C;&#x671B;&#x5728;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5BF9;&#x5F02;&#x5E38;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF01;</p>
+<p>try&#x8BED;&#x53E5;</p>
+<p>&#x200B;    try:</p>
+<p>&#x200B;        &#x4EE3;&#x7801;&#x5757;&#xFF08;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x7684;&#x8BED;&#x53E5;&#xFF09;</p>
+<p>&#x200B;    except &#x5F02;&#x5E38;&#x7C7B;&#x578B;:</p>
+<p>&#x200B;        &#x4EE3;&#x7801;&#x5757;&#xFF08;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x4EE5;&#x540E;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF09;</p>
+<p>&#x200B;    else:</p>
+<p>&#x200B;        &#x4EE3;&#x7801;&#x5757;&#xFF08;&#x6CA1;&#x51FA;&#x9519;&#x65F6;&#x4EE5;&#x540E;&#x7684;&#x8BED;&#x53E5;&#xFF09;</p>
+<p>&#x200B;    finally:</p>
+<p>&#x200B;        &#x4EE3;&#x7801;&#x5757;&#xFF08;&#x8BE5;&#x4EE3;&#x7801;&#x603B;&#x4F1A;&#x6267;&#x884C;&#xFF09;</p>
+<p>&#x200B;    try&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;else&#x8BED;&#x53E5;&#x6709;&#x6CA1;&#x6709;&#x90FD;&#x884C;</p>
+<p>&#x200B;    except&#x548C;finally&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;</p>
+<p>&#x53EF;&#x4EE5;&#x5C06;&#x53EF;&#x80FD;&#x51FA;&#x9519;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5230;try&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x5982;&#x679C;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x4F1A;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x5219;&#x4F1A;&#x6267;&#x884C;except&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x6765;&#x5904;&#x7406;&#x5F02;&#x5E38;&#xFF0C;&#x907F;&#x514D;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x5BFC;&#x81F4;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x7EC8;&#x6B62;</p>
+<pre><code class="lang-python">print(<span class="hljs-string">&apos;hello&apos;</span>)
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># try&#x4E2D;&#x653E;&#x7F6E;&#x7684;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x7684;&#x4EE3;&#x7801;</span>
+    print(<span class="hljs-number">10</span>/<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-keyword">except</span>:
+    <span class="hljs-comment"># except&#x4E2D;&#x653E;&#x7F6E;&#x7684;&#x662F;&#x51FA;&#x9519;&#x4EE5;&#x540E;&#x7684;&#x5904;&#x7406;&#x4EE3;&#x7801;</span>
+    print(<span class="hljs-string">&apos;&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x9519;&#x8BEF;&#x5566;&#xFF01;&apos;</span>)
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">&apos;&#x7A0B;&#x5E8F;&#x6B63;&#x5E38;&#x6267;&#x884C;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&apos;</span>)
+
+print(<span class="hljs-string">&apos;nihao&apos;</span>)
+</code></pre>
+<h2 id="&#x5F02;&#x5E38;&#x7684;&#x4F20;&#x64AD;">&#x5F02;&#x5E38;&#x7684;&#x4F20;&#x64AD;</h2>
+<p>&#x5F53;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x5BF9;&#x5F02;&#x5E38;&#x8FDB;&#x884C;&#x4E86;&#x5904;&#x7406;&#xFF0C;&#x5219;&#x5F02;&#x5E38;&#x4E0D;&#x4F1A;&#x518D;&#x7EE7;&#x7EED;&#x4F20;&#x64AD;&#xFF0C;&#x5982;&#x679C;&#x51FD;&#x6570;&#x4E2D;&#x6CA1;&#x6709;&#x5BF9;&#x5F02;&#x5E38;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5219;&#x5F02;&#x5E38;&#x4F1A;&#x7EE7;&#x7EED;&#x5411;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5904;&#x4F20;&#x64AD;&#xFF0C;&#x5982;&#x679C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5904;&#x5904;&#x7406;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x4E0D;&#x518D;&#x4F20;&#x64AD;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5904;&#x7406;&#x5219;&#x7EE7;&#x7EED;&#x5411;&#x8C03;&#x7528;&#x5904;&#x4F20;&#x64AD;&#xFF0C;&#x76F4;&#x5230;&#x4F20;&#x9012;&#x5230;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#xFF08;&#x4E3B;&#x6A21;&#x5757;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x4F9D;&#x7136;&#x6CA1;&#x6709;&#x5904;&#x7406;&#xFF0C;&#x5219;&#x7A0B;&#x5E8F;&#x7EC8;&#x6B62;&#xFF0C;&#x5E76;&#x663E;&#x793A;&#x5F02;&#x5E38;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fn</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;Hello fn&apos;</span>)
+    print(<span class="hljs-number">10</span>/<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">pass</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fn2</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&apos;Hello fn&apos;</span>)
+    fn()
+
+fn2()
+</code></pre>
+<p>&#x5F53;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x4EE5;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x4F1A;&#x88AB;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x7684;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x800C;&#x5F02;&#x5E38;&#x4F20;&#x64AD;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;&#x629B;&#x7ED9;&#x4E86;&#x8C03;&#x7528;&#x5904;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;ZeroDivisionError&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x8868;&#x793A;&#x9664;0&#x7684;&#x5F02;&#x5E38;</p>
+<p>&#x200B;        NameError&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x5904;&#x7406;&#x53D8;&#x91CF;&#x9519;&#x8BEF;&#x7684;&#x5F02;&#x5E38;</p>
+<p>&#x200B;        ...</p>
+<p>&#x5728;Python&#x4E2D;&#x5E2E;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x5F88;&#x591A;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x7C7B;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5F02;&#x5E38;&#x5BF9;&#x8C61;</span>
+print(<span class="hljs-string">&apos;&#x5F02;&#x5E38;&#x51FA;&#x73B0;&#x524D;&apos;</span>)
+
+<span class="hljs-keyword">try</span>:
+    print(c)
+    print(<span class="hljs-number">10</span>/<span class="hljs-number">0</span>)
+<span class="hljs-keyword">except</span> NameError:
+    <span class="hljs-comment"># &#x5982;&#x679C;except&#x540E;&#x4E0D;&#x8DDF;&#x4EFB;&#x4F55;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5219;&#x6B64;&#x65F6;&#x5B83;&#x4F1A;&#x8865;&#x8D27;&#x5230;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;&#x5728;except&#x540E;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x5B83;&#x53EA;&#x4F1A;&#x6355;&#x83B7;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x5F02;&#x5E38;</span>
+    print(<span class="hljs-string">&apos;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x7684;&#x4EE3;&#x7801;&apos;</span>)
+<span class="hljs-keyword">except</span> ZeroDivisionError:
+    print(<span class="hljs-string">&apos;&#x51FA;&#x73B0;&#x9664;0&#x9519;&#x8BEF;&apos;</span>)
+<span class="hljs-comment"># Exceltion &#x662F;&#x6240;&#x6709;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;except&#x540E;&#x8DDF;&#x7684;&#x662F;Exception&#xFF0C;&#x4ED6;&#x4E5F;&#x4F1A;&#x6355;&#x83B7;&#x5230;&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;</span>
+<span class="hljs-comment"># &#x53EF;&#x4EE5;&#x5728;&#x5F02;&#x5E38;&#x7C7B;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;as xx &#x6B64;&#x65F6;xx&#x5C31;&#x662F;&#x5F02;&#x5E38;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">&apos;&#x672A;&#x77E5;&#x5F02;&#x5E38;&apos;</span>,e)
+<span class="hljs-keyword">finally</span> :
+    print(<span class="hljs-string">&apos;&#x65E0;&#x8BBA;&#x662F;&#x5426;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x8BE5;&#x5B50;&#x53E5;&#x90FD;&#x4F1A;&#x6267;&#x884C;&apos;</span>)
+print(<span class="hljs-string">&apos;&#x5F02;&#x5E38;&#x51FA;&#x73B0;&#x540E;&apos;</span>)
+</code></pre>
+<h2 id="&#x629B;&#x51FA;&#x5F02;&#x5E38;">&#x629B;&#x51FA;&#x5F02;&#x5E38;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;raise &#x8BED;&#x53E5;&#x6765;&#x629B;&#x51FA;&#x5F02;&#x5E38;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(a,b)</span>:</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;a&#x548C;b&#x4E2D;&#x6709;&#x8D1F;&#x6570;&#xFF0C;&#x5C31;&#x5411;&#x8C03;&#x7528;&#x5904;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+    <span class="hljs-keyword">if</span> a&lt;<span class="hljs-number">0</span> <span class="hljs-keyword">or</span> b&lt;<span class="hljs-number">0</span>:
+        <span class="hljs-comment"># raise&#x7528;&#x4E8E;&#x5411;&#x5916;&#x90E8;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x540E;&#x8FB9;&#x53EF;&#x4EE5;&#x8DDF;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x7C7B;&#xFF0C;&#x6216;&#x5F02;&#x5E38;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</span>
+        <span class="hljs-comment"># &#x629B;&#x51FA;&#x5F02;&#x5E38;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x544A;&#x8BC9;&#x8C03;&#x7528;&#x8005;&#x8FD9;&#x91CC;&#x8C03;&#x7528;&#x65F6;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x5E0C;&#x671B;&#x4F60;&#x81EA;&#x5DF1;&#x5904;&#x7406;&#x4E00;&#x4E0B;</span>
+        <span class="hljs-keyword">raise</span> Exception(<span class="hljs-string">&apos;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x4E2D;&#x4E0D;&#x80FD;&#x6709;&#x8D1F;&#x6570;&#xFF01;&apos;</span>)
+
+        <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;if else &#x6765;&#x4EE3;&#x66FF;&#x5F02;&#x5E38;&#x7684;&#x5904;&#x7406;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">None</span>
+    r=a+b
+    <span class="hljs-keyword">return</span> r
+
+print(add(<span class="hljs-number">-123</span>,<span class="hljs-number">456</span>))
+</code></pre>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;">&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;</h3>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyError</span><span class="hljs-params">(Exception)</span>:</span>
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<h2 id="&#x6587;&#x4EF6;&#xFF08;file&#xFF09;">&#x6587;&#x4EF6;&#xFF08;file&#xFF09;</h2>
+<p>&#x901A;&#x8FC7;Python&#x7A0B;&#x5E8F;&#x5BF9;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x5404;&#x79CD;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x589E;&#x5220;&#x6539;&#x67E5;&#x7684;&#x64CD;&#x4F5C;</p>
+<p>I/O &#xFF08;Input/Output&#xFF09;</p>
+<p>&#x64CD;&#x4F5C;&#x6587;&#x4EF6;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x6253;&#x5F00;&#x6587;&#x4EF6;</li>
+<li>&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x64CD;&#x4F5C;&#xFF08;&#x8BFB;&#x3001;&#x5199;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x4FDD;&#x5B58;</li>
+<li>&#x5173;&#x95ED;&#x6587;&#x4EF6;</li>
+</ol>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6253;&#x5F00;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment"># open(file,...)</span>
+<span class="hljs-comment"># &#x4F7F;&#x7528;open&#x51FD;&#x6570;&#x6765;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment"># &#x53C2;&#x6570;&#xFF1A;</span>
+<span class="hljs-comment">#    file &#x8981;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#xFF08;&#x8DEF;&#x5F84;&#xFF09;</span>
+<span class="hljs-comment"># &#x8FD4;&#x56DE;&#x503C;&#xFF1A;</span>
+<span class="hljs-comment">#    &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5C31;&#x4EE3;&#x8868;&#x4E86;&#x5F53;&#x524D;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;</span>
+
+
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x6765;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x5B57;</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x548C;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5728;&#x540C;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6587;&#x4EF6;&#x540D;&#x5373;&#x53EF;</span>
+file_name = <span class="hljs-string">&apos;demo.txt&apos;</span>
+
+<span class="hljs-comment"># &#x5728;windows&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x8DEF;&#x5F84;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;/&#x6765;&#x4EE3;&#x66FF;\</span>
+<span class="hljs-comment"># &#x6216;&#x8005;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;\\&#x6765;&#x4EE3;&#x66FF;\\</span>
+<span class="hljs-comment"># &#x6216;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x539F;&#x59CB;&#x5B57;&#x7B26;&#x4E32;</span>
+file_name = <span class="hljs-string">&apos;hello/demo.txt&apos;</span>
+file_name = <span class="hljs-string">r&apos;hello\demo.txt&apos;</span>
+
+<span class="hljs-comment"># &#x8868;&#x793A;&#x8DEF;&#x5F84;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;..&#x6765;&#x8FD4;&#x56DE;&#x4E00;&#x7EA7;&#x76EE;&#x5F55;</span>
+file_name = <span class="hljs-string">&apos;../hello/demo.txt&apos;</span>
+
+<span class="hljs-comment"># &#x5982;&#x679C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x8DDD;&#x79BB;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6BD4;&#x8F83;&#x8FDC;&#xFF0C;&#x6B64;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># &#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x5E94;&#x8BE5;&#x4ECE;&#x78C1;&#x76D8;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x5F00;&#x59CB;&#x4E66;&#x5199;</span>
+file_name = <span class="hljs-string">r&apos;C:\Users\kofzhang\Desktop\hello.txt&apos;</span>
+
+file_obj = open(file_name) <span class="hljs-comment"># &#x6253;&#x5F00; file_name &#x5BF9;&#x5E94;&#x7684;&#x6587;&#x4EF6;</span>
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6253;&#x5F00;&#x6587;&#x4EF6;</span>
+file_name = <span class="hljs-string">&apos;demo.txt&apos;</span>
+
+<span class="hljs-comment"># &#x8C03;&#x7528;open()&#x6765;&#x6253;&#x5F00;&#x6587;&#x4EF6;</span>
+file_obj = open(file_name)
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;</span>
+<span class="hljs-comment"># &#x5F53;&#x6211;&#x4EEC;&#x83B7;&#x53D6;&#x4E86;&#x6587;&#x4EF6;&#x5BF9;&#x8C61;&#x4EE5;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5BF9;&#x6587;&#x4EF6;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x5E94;&#x8BE5;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x6765;&#x8FDB;&#x884C;</span>
+<span class="hljs-comment"># read()&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x5185;&#x5BB9;&#x5168;&#x90E8;&#x4FDD;&#x5B58;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FD4;&#x56DE;</span>
+content = file_obj.read()
+
+print(content)
+
+<span class="hljs-comment"># &#x5173;&#x95ED;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment"># &#x8C03;&#x7528;close() &#x65B9;&#x6CD5;&#x6765;&#x5173;&#x95ED;&#x6587;&#x4EF6;</span>
+file_obj.close()
+
+
+<span class="hljs-comment"># with ... as &#x8BED;&#x53E5;</span>
+<span class="hljs-keyword">with</span> open(file_name) <span class="hljs-keyword">as</span> file_obj:
+    <span class="hljs-comment"># &#x5728;with&#x8BED;&#x53E5;&#x4E2D;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;file_obj&#x6765;&#x505A;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;</span>
+    <span class="hljs-comment"># &#x6B64;&#x65F6;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x53EA;&#x80FD;&#x5728;with&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x4E00;&#x65E6;with&#x7ED3;&#x675F;&#x5219;&#x6587;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;close()</span>
+    print(file_obj.read())
+
+    <span class="hljs-keyword">pass</span>
+
+
+file_name = <span class="hljs-string">&apos;hello&apos;</span>
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">with</span> open(file_name) <span class="hljs-keyword">as</span> file_obj:
+        print(file_obj.read())
+        <span class="hljs-keyword">pass</span>
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-keyword">except</span> FileNotFoundError:
+    print(f<span class="hljs-string">&apos;{file_name} &#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x7F16;&#x7801;&#x95EE;&#x9898;</span>
+file_name = <span class="hljs-string">&apos;hello&apos;</span>
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># &#x8C03;&#x7528;open()&#x6765;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x6587;&#x4EF6;&#x5206;&#x6210;&#x4E24;&#x79CD;&#x7C7B;&#x578B;</span>
+    <span class="hljs-comment"># &#x4E00;&#x79CD;&#xFF0C;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF08;&#x4F7F;&#x7528;utf-8&#x7B49;&#x7F16;&#x7801;&#x7F16;&#x5199;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;</span>
+    <span class="hljs-comment"># &#x4E00;&#x79CD;&#xFF0C;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF08;&#x56FE;&#x7247;&#x3001;mp3&#x3001;ppt&#x7B49;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#xFF09;</span>
+    <span class="hljs-comment"># open()&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4EE5;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;&#x6253;&#x5F00;&#x7684;&#xFF0C;&#x4F46;&#x662F;open()&#x6587;&#x4EF6;&#x7684;&#x9ED8;&#x8BA4;&#x7F16;&#x7801;&#x4E3A;None</span>
+    <span class="hljs-comment"># &#x6240;&#x4EE5;&#x5904;&#x7406;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x7801;</span>
+    <span class="hljs-keyword">with</span> open(file_name,encoding=<span class="hljs-string">&apos;utf-8&apos;</span>) <span class="hljs-keyword">as</span> file_obj:
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x76F4;&#x63A5;&#x8C03;&#x7528;read()&#x5B83;&#x4F1A;&#x5C06;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x5168;&#x90E8;&#x90FD;&#x8BFB;&#x53D6;&#x51FA;&#x6765;</span>
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x6587;&#x4EF6;&#x8F83;&#x5927;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x4E00;&#x6B21;&#x6027;&#x5C06;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x52A0;&#x8F7D;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6EA2;&#x51FA;</span>
+        <span class="hljs-comment"># &#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x8F83;&#x5927;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x8981;&#x76F4;&#x63A5;&#x8C03;&#x7528;read()</span>
+        <span class="hljs-comment"># help(file_obj.read)</span>
+        <span class="hljs-comment"># read()&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x4E00;&#x4E2A;size&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x8981;&#x8BFB;&#x53D6;&#x5B57;&#x7B26;&#x7684;&#x6570;&#x91CF;</span>
+        <span class="hljs-comment">#    &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;-1&#xFF0C;&#x5B83;&#x4F1A;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;</span>
+        <span class="hljs-comment">#    &#x53EF;&#x4EE5;&#x4E3A;size&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x8FD9;&#x6837;read()&#x4F1A;&#x8BFB;&#x53D6;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5B57;&#x7B26;</span>
+        <span class="hljs-comment">#        &#x6BCF;&#x4E00;&#x6B21;&#x8BFB;&#x53D6;&#x90FD;&#x662F;&#x4ECE;&#x4E0A;&#x6B21;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x8BFB;&#x53D6;&#x7684;</span>
+        <span class="hljs-comment">#        &#x5982;&#x679C;&#x5B57;&#x7B26;&#x7684;&#x6570;&#x91CF;&#x5C0F;&#x4E8E;size&#xFF0C;&#x5219;&#x4F1A;&#x8BFB;&#x53D6;&#x5269;&#x4F59;&#x6240;&#x6709;&#x7684;&#x5B57;&#x7B26;</span>
+        <span class="hljs-comment">#        &#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x8BFB;&#x53D6;&#x5230;&#x4E86;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x4E86;&#xFF0C;&#x5219;&#x4F1A;&#x8FD4;&#x56DE;&apos;&apos;&#x7A7A;&#x4E32;</span>
+        print(file_obj.read())
+        <span class="hljs-keyword">pass</span>
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-keyword">except</span> FileNotFoundError:
+    print(f<span class="hljs-string">&apos;{file_name} &#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8BFB;&#x53D6;&#x5927;&#x6587;&#x4EF6;&#x7684;&#x683C;&#x5F0F;</span>
+file_name = <span class="hljs-string">&apos;hello.txt&apos;</span>
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-keyword">with</span> open(file_name,encoding=<span class="hljs-string">&apos;utf-8&apos;</span>) <span class="hljs-keyword">as</span> file_obj:
+        <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x6765;&#x6307;&#x5B9A;&#x6BCF;&#x6B21;&#x8BFB;&#x53D6;&#x7684;&#x5927;&#x5C0F;</span>
+        chunk=<span class="hljs-number">100</span>
+        <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x6765;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x5185;&#x5BB9;</span>
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+            <span class="hljs-comment"># &#x8BFB;&#x53D6;chunk&#x5927;&#x5C0F;&#x7684;&#x5185;&#x5BB9;</span>
+            content = file_obj.read(chunk)
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> content:
+                <span class="hljs-comment"># &#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x5B8C;&#x6BD5;</span>
+                <span class="hljs-keyword">break</span>
+            <span class="hljs-comment">#&#x8F93;&#x51FA;&#x5185;&#x5BB9;</span>
+            print(content)
+
+        <span class="hljs-keyword">pass</span>
+    <span class="hljs-keyword">pass</span>
+<span class="hljs-keyword">except</span> FileNotFoundError:
+    print(f<span class="hljs-string">&apos;{file_name} &#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&apos;</span>)
+</code></pre>
+<pre><code class="lang-python">file_name = <span class="hljs-string">&apos;demo.txt&apos;</span>
+
+<span class="hljs-keyword">with</span> open(file_name,encoding=<span class="hljs-string">&apos;utf-8&apos;</span>) <span class="hljs-keyword">as</span> file_obj:
+    <span class="hljs-comment"># readline()</span>
+    <span class="hljs-comment"># &#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8BFB;&#x53D6;&#x4E00;&#x884C;&#x6570;&#x636E;</span>
+    print(file_obj.readline(),end = <span class="hljs-string">&apos;&apos;</span>)
+
+    <span class="hljs-comment"># readlines()</span>
+    <span class="hljs-comment"># &#x8BE5;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x4E00;&#x884C;&#x4E00;&#x884C;&#x7684;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#xFF0C;&#x5B83;&#x4F1A;&#x4E00;&#x6B21;&#x6027;&#x5C06;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x5185;&#x5BB9;&#x5C01;&#x88C5;&#x5230;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E2D;&#x8FD4;&#x56DE;</span>
+    r = file_obj.readlines()
+    pprint.pprint(r[<span class="hljs-number">0</span>])
+
+    <span class="hljs-comment"># &#x4E5F;&#x662F;&#x4E00;&#x884C;&#x4E00;&#x884C;&#x8BFB;&#x53D6;</span>
+    <span class="hljs-keyword">for</span> t <span class="hljs-keyword">in</span> file_obj:
+        print(t)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6587;&#x4EF6;&#x7684;&#x5199;&#x5165;</span>
+file_name = <span class="hljs-string">&apos;demo.txt&apos;</span>
+
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;open()&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x65F6;&#x5FC5;&#x987B;&#x8981;&#x6307;&#x5B9A;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6240;&#x8981;&#x505A;&#x7684;&#x64CD;&#x4F5C;&#xFF08;&#x8BFB;&#x3001;&#x5199;&#x3001;&#x8FFD;&#x52A0;&#xFF09;</span>
+<span class="hljs-comment"># &#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x662F; &#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x65F6;&#x65F6;&#x4E0D;&#x80FD;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x7684;</span>
+<span class="hljs-comment"># r &#x8868;&#x793A;&#x53EA;&#x8BFB;&#x7684;</span>
+<span class="hljs-comment"># w &#x8868;&#x793A;&#x662F;&#x53EF;&#x5199;&#x7684;&#xFF0C;&#x4F7F;&#x7528;w&#x6765;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x4F1A;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#x5219;&#x4F1A;&#x622A;&#x65AD;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment">#    &#x622A;&#x65AD;&#x6587;&#x4EF6;&#x6307;&#x5220;&#x9664;&#x539F;&#x6765;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;</span>
+<span class="hljs-comment"># a &#x8868;&#x793A;&#x8FFD;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x4F1A;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#x5219;&#x4F1A;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x8FFD;&#x52A0;&#x5185;&#x5BB9;</span>
+<span class="hljs-comment"># x &#x7528;&#x6765;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x521B;&#x5EFA;&#xFF0C;&#x5B58;&#x5728;&#x5219;&#x62A5;&#x9519;</span>
+<span class="hljs-comment"># + &#x4E3A;&#x64CD;&#x4F5C;&#x7B26;&#x589E;&#x52A0;&#x529F;&#x80FD;</span>
+<span class="hljs-comment">#     r+ &#x65E2;&#x53EF;&#x8BFB;&#x53C8;&#x53EF;&#x5199;&#xFF0C;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x4F1A;&#x62A5;&#x9519;</span>
+<span class="hljs-comment">#    w+</span>
+<span class="hljs-comment">#    a+</span>
+<span class="hljs-keyword">with</span> open(file_name , <span class="hljs-string">&apos;a&apos;</span>,encoding = <span class="hljs-string">&apos;utf-8&apos;</span>) <span class="hljs-keyword">as</span> file_obj:
+    <span class="hljs-comment"># write()&#x6765;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x5185;&#x5BB9;</span>
+    <span class="hljs-comment"># &#x5982;&#x679C;&#x64CD;&#x4F5C;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x8BDD;&#xFF0C;&#x5219;write()&#x9700;&#x8981;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</span>
+    <span class="hljs-comment"># &#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5206;&#x591A;&#x6B21;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x5185;&#x5BB9;</span>
+    <span class="hljs-comment"># &#x5199;&#x5165;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x5199;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x7684;&#x4E2A;&#x6570;</span>
+    file_obj.write(<span class="hljs-string">&apos;Hello Hello How are you!&apos;</span>)
+</code></pre>
+<pre><code class="lang-python">file_name = <span class="hljs-string">&apos;c:/Users/kofzhang/Desktop/aaa.flac&apos;</span>
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x6A21;&#x5F0F;</span>
+<span class="hljs-comment"># t &#x8BFB;&#x53D6;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;</span>
+<span class="hljs-comment"># b &#x8BFB;&#x53D6;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</span>
+<span class="hljs-keyword">with</span> open(file_name,<span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> file_obj:
+    <span class="hljs-comment"># &#x8BFB;&#x53D6;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;size&#x662F;&#x4EE5;&#x5B57;&#x7B26;&#x95EE;&#x5355;&#x4F4D;&#x7684;</span>
+    <span class="hljs-comment"># &#x8BFB;&#x53D6;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;size&#x65F6;&#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;&#x7684;</span>
+    print(file_obj.read(<span class="hljs-number">100</span>))
+
+    <span class="hljs-comment"># &#x5C06;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x5185;&#x5BB9;&#x5199;&#x51FA;&#x6765;</span>
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;</span>
+    new_name = <span class="hljs-string">&apos;aa.flac&apos;</span>
+
+    <span class="hljs-keyword">with</span> open(new_name,<span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> new_obj:
+
+        <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x6BCF;&#x6B21;&#x8BFB;&#x53D6;&#x7684;&#x5927;&#x5C0F;</span>
+        chunk = <span class="hljs-number">1024</span>*<span class="hljs-number">100</span>
+
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+
+            <span class="hljs-comment"># &#x4ECE;&#x5DF2;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;</span>
+            content = file_obj.read(chunk)
+
+            <span class="hljs-comment"># &#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x5B8C;&#x6BD5;&#xFF0C;&#x7EC8;&#x6B62;&#x5FAA;&#x73AF;</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> content:
+                <span class="hljs-keyword">break</span>
+            <span class="hljs-comment"># &#x5C06;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#x6570;&#x636E;&#x5199;&#x5165;&#x5230;&#x65B0;&#x5BF9;&#x8C61;&#x4E2D;</span>
+            new_obj.write(content)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;</span>
+<span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;demo.txt&apos;</span>,<span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> file_obj:
+    print(file_obj.read(<span class="hljs-number">100</span>))
+
+    <span class="hljs-comment"># seek() &#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x8BFB;&#x53D6;&#x7684;&#x4F4D;&#x7F6E;</span>
+    file_obj.seek(<span class="hljs-number">55</span>)
+    file_obj.seek(<span class="hljs-number">80</span>,<span class="hljs-number">0</span>)
+    file_obj.seek(<span class="hljs-number">80</span>,<span class="hljs-number">1</span>)
+    file_obj.seek(<span class="hljs-number">-1</span>,<span class="hljs-number">2</span>)
+    <span class="hljs-comment"># seek()&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x53C2;&#x6570;</span>
+    <span class="hljs-comment">#    &#x7B2C;&#x4E00;&#x4E2A; &#x662F;&#x8981;&#x5207;&#x6362;&#x5230;&#x7684;&#x4F4D;&#x7F6E;</span>
+    <span class="hljs-comment">#     &#x7B2C;&#x4E8C;&#x4E2A; &#x8BA1;&#x7B97;&#x4F4D;&#x7F6E;&#x65B9;&#x5F0F;</span>
+    <span class="hljs-comment">#        &#x53EF;&#x9009;&#x503C;&#xFF1A;</span>
+    <span class="hljs-comment">#            0 &#x4ECE;&#x5934;&#x8BA1;&#x7B97;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;</span>
+    <span class="hljs-comment">#            1 &#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x8BA1;&#x7B97;</span>
+    <span class="hljs-comment">#            2 &#x4ECE;&#x6700;&#x540E;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x8BA1;&#x7B97;</span>
+
+    <span class="hljs-comment"># tell() &#x65B9;&#x6CD5;&#x7528;&#x6765;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x8BFB;&#x53D6;&#x7684;&#x4F4D;&#x7F6E;</span>
+    print(<span class="hljs-string">&apos;&#x6321;&#x5708;&#x8BFB;&#x53D6;&#x5230;&#x4E86;--&gt;&apos;</span>,file_obj.tell())
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6587;&#x4EF6;&#x7684;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;</span>
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">from</span> pprint <span class="hljs-keyword">import</span> pprint
+
+<span class="hljs-comment"># os.listdir() &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</span>
+<span class="hljs-comment"># &#x9700;&#x8981;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F1A;&#x83B7;&#x53D6;&#x5230;&#x8BE5;&#x8DEF;&#x5F84;&#x4E0B;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF0C;&#x9ED8;&#x8BA4;&#x8DEF;&#x5F84;&#x4E3A;. &#x5F53;&#x524D;&#x76EE;&#x5F55;</span>
+<span class="hljs-comment"># &#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x540D;&#x5B57;&#x90FD;&#x662F;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+
+r = os.listdir()
+
+<span class="hljs-comment"># os.getcwd() &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;</span>
+r = os.getcwd()
+
+<span class="hljs-comment"># os.chdir()&#x5207;&#x6362;&#x5F53;&#x524D;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;  &#x4F5C;&#x7528;&#x76F8;&#x5F53;&#x4E8E;cd</span>
+os.chdir(<span class="hljs-string">&apos;c:/&apos;</span>)
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x76EE;&#x5F55;</span>
+<span class="hljs-comment"># os.mkdir(&apos;aaa) # &#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;aaa&#x7684;&#x76EE;&#x5F55;</span>
+
+<span class="hljs-comment"># &#x5220;&#x9664;&#x76EE;&#x5F55;</span>
+<span class="hljs-comment"># os.rmdi(&apos;abc&apos;)</span>
+
+open(<span class="hljs-string">&apos;aa.txt&apos;</span>,<span class="hljs-string">&apos;w&apos;</span>)
+<span class="hljs-comment"># &#x5220;&#x9664;&#x6587;&#x4EF6;</span>
+os.remove(<span class="hljs-string">&apos;aa.txt&apos;</span>)
+
+os.rename(<span class="hljs-string">&apos;&#x65E7;&#x540D;&#x5B57;&apos;</span>,<span class="hljs-string">&apos;&#x65B0;&#x540D;&#x5B57;&apos;</span>) <span class="hljs-comment"># &#x53EF;&#x4EE5;&#x5BF9;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x91CD;&#x547D;&#x540D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</span>
+os.rename(<span class="hljs-string">&apos;aa.txt&apos;</span>,<span class="hljs-string">&apos;C:/users/kofzhang/Desktop/bb.txt&apos;</span>)
+
+print(r)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter6.html" class="navigation navigation-prev " aria-label="Previous page: 第六章 对象">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../flask/readme.html" class="navigation navigation-next " aria-label="Next page: Flask教程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第七章 异常文件","level":"2.1.7","depth":2,"next":{"title":"Flask教程","level":"2.2","depth":1,"path":"python/flask/readme.md","ref":"python/flask/readme.md","articles":[{"title":"为什么要用Web框架","level":"2.2.1","depth":2,"path":"python/flask/chapter1.md","ref":"python/flask/chapter1.md","articles":[]},{"title":"课程大纲","level":"2.2.2","depth":2,"path":"python/flask/chapter2.md","ref":"python/flask/chapter2.md","articles":[]},{"title":"Flask简介","level":"2.2.3","depth":2,"path":"python/flask/chapter3.md","ref":"python/flask/chapter3.md","articles":[]},{"title":"Flask安装环境","level":"2.2.4","depth":2,"path":"python/flask/chapter4.md","ref":"python/flask/chapter4.md","articles":[]},{"title":"Requirements文件","level":"2.2.5","depth":2,"path":"python/flask/chapter5.md","ref":"python/flask/chapter5.md","articles":[]},{"title":"从HelloWorld开始","level":"2.2.6","depth":2,"path":"python/flask/chapter6.md","ref":"python/flask/chapter6.md","articles":[]}]},"previous":{"title":"第六章 对象","level":"2.1.6","depth":2,"path":"python/pythonjichu/chapter6.md","ref":"python/pythonjichu/chapter6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/pythonjichu/chapter7.md","mtime":"2019-04-29T09:15:56.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-30T09:16:41.177Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
